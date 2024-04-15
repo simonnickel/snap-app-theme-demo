@@ -73,6 +73,8 @@
 		5A1EEBF52BCD6FDF00422FD8 /* SnapMatchingNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */; };
 		5A1EEBF82BCD6FFC00422FD8 /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF72BCD6FFC00422FD8 /* SnapCore */; };
 		5A1EEBFB2BCD700D00422FD8 /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */; };
+		5A1EEC182BCD740700422FD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEC172BCD740700422FD8 /* README.md */; };
+		5A1EEC1A2BCD740B00422FD8 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEC192BCD740B00422FD8 /* TODO.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +141,8 @@
 		5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
 		5A1EEBE22BCD6EAF00422FD8 /* ValueKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValueKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEC172BCD740700422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5A1EEC192BCD740B00422FD8 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = TODO.md; path = ../TODO.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 		5A1EEB4C2BCD6D6B00422FD8 = {
 			isa = PBXGroup;
 			children = (
+				5A1EEC172BCD740700422FD8 /* README.md */,
+				5A1EEC192BCD740B00422FD8 /* TODO.md */,
 				5A1EEB572BCD6D6B00422FD8 /* SnapAppThemeDemo */,
 				5A1EEB562BCD6D6B00422FD8 /* Products */,
 			);
@@ -442,8 +448,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1EEC1A2BCD740B00422FD8 /* TODO.md in Resources */,
 				5A1EEB862BCD6E9B00422FD8 /* README.md in Resources */,
 				5A1EEBEB2BCD6EAF00422FD8 /* ThemeColors.xcassets in Resources */,
+				5A1EEC182BCD740700422FD8 /* README.md in Resources */,
 				5A1EEB612BCD6D6D00422FD8 /* Preview Assets.xcassets in Resources */,
 				5A1EEB5D2BCD6D6D00422FD8 /* Assets.xcassets in Resources */,
 			);
