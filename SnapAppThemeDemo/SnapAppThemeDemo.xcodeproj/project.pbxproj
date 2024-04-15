@@ -8,18 +8,137 @@
 
 /* Begin PBXBuildFile section */
 		5A1EEB592BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB582BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift */; };
-		5A1EEB5B2BCD6D6B00422FD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB5A2BCD6D6B00422FD8 /* ContentView.swift */; };
 		5A1EEB5D2BCD6D6D00422FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB5C2BCD6D6D00422FD8 /* Assets.xcassets */; };
 		5A1EEB612BCD6D6D00422FD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB602BCD6D6D00422FD8 /* Preview Assets.xcassets */; };
+		5A1EEB7C2BCD6E9B00422FD8 /* Dependencies+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB672BCD6E9B00422FD8 /* Dependencies+Environment.swift */; };
+		5A1EEB7D2BCD6E9B00422FD8 /* NavSidebarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB692BCD6E9B00422FD8 /* NavSidebarScreen.swift */; };
+		5A1EEB7E2BCD6E9B00422FD8 /* NavSplitScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6A2BCD6E9B00422FD8 /* NavSplitScene.swift */; };
+		5A1EEB7F2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6B2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift */; };
+		5A1EEB802BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6D2BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift */; };
+		5A1EEB812BCD6E9B00422FD8 /* NavTabScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6E2BCD6E9B00422FD8 /* NavTabScene.swift */; };
+		5A1EEB822BCD6E9B00422FD8 /* NavTabSceneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6F2BCD6E9B00422FD8 /* NavTabSceneList.swift */; };
+		5A1EEB832BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */; };
+		5A1EEB842BCD6E9B00422FD8 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */; };
+		5A1EEB852BCD6E9B00422FD8 /* NavItem+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */; };
+		5A1EEB862BCD6E9B00422FD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB742BCD6E9B00422FD8 /* README.md */; };
+		5A1EEB872BCD6E9B00422FD8 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */; };
+		5A1EEB882BCD6E9B00422FD8 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */; };
+		5A1EEB892BCD6E9B00422FD8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB782BCD6E9B00422FD8 /* AppState.swift */; };
+		5A1EEB8A2BCD6E9B00422FD8 /* NavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */; };
+		5A1EEB8B2BCD6E9B00422FD8 /* NavItemDestinationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB7A2BCD6E9B00422FD8 /* NavItemDestinationWrapper.swift */; };
+		5A1EEBB62BCD6EA100422FD8 /* ThemeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8C2BCD6EA100422FD8 /* ThemeConfig.swift */; };
+		5A1EEBB72BCD6EA100422FD8 /* ThemeConfig+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */; };
+		5A1EEBB82BCD6EA100422FD8 /* ThemeConfig+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */; };
+		5A1EEBB92BCD6EA100422FD8 /* ThemeConfig+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */; };
+		5A1EEBBA2BCD6EA100422FD8 /* ThemeConfig+TextColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */; };
+		5A1EEBBB2BCD6EA100422FD8 /* ThemeConfig+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Values.swift */; };
+		5A1EEBBC2BCD6EA100422FD8 /* ThemeConfigScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */; };
+		5A1EEBBD2BCD6EA100422FD8 /* ThemeConfigSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */; };
+		5A1EEBBE2BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB942BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift */; };
+		5A1EEBBF2BCD6EA100422FD8 /* LabelStyleExampleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB962BCD6EA100422FD8 /* LabelStyleExampleScreen.swift */; };
+		5A1EEBC02BCD6EA100422FD8 /* LabelStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB972BCD6EA100422FD8 /* LabelStyleModel.swift */; };
+		5A1EEBC12BCD6EA100422FD8 /* LabelStylesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB982BCD6EA100422FD8 /* LabelStylesList.swift */; };
+		5A1EEBC22BCD6EA100422FD8 /* ExampleListLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB9B2BCD6EA100422FD8 /* ExampleListLoop.swift */; };
+		5A1EEBC32BCD6EA100422FD8 /* ExampleListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB9C2BCD6EA100422FD8 /* ExampleListRow.swift */; };
+		5A1EEBC42BCD6EA100422FD8 /* ExampleListRowVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB9D2BCD6EA100422FD8 /* ExampleListRowVariants.swift */; };
+		5A1EEBC52BCD6EA100422FD8 /* ExampleListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB9E2BCD6EA100422FD8 /* ExampleListScene.swift */; };
+		5A1EEBC62BCD6EA100422FD8 /* ExampleListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB9F2BCD6EA100422FD8 /* ExampleListSection.swift */; };
+		5A1EEBC72BCD6EA100422FD8 /* BackgroundToggleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBA12BCD6EA100422FD8 /* BackgroundToggleContainer.swift */; };
+		5A1EEBC82BCD6EA100422FD8 /* ExampleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBA22BCD6EA100422FD8 /* ExampleCardView.swift */; };
+		5A1EEBC92BCD6EA100422FD8 /* ExampleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBA32BCD6EA100422FD8 /* ExampleTextView.swift */; };
+		5A1EEBCA2BCD6EA100422FD8 /* ExampleColorsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBA52BCD6EA100422FD8 /* ExampleColorsScreen.swift */; };
+		5A1EEBCB2BCD6EA100422FD8 /* ExampleTextScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBA62BCD6EA100422FD8 /* ExampleTextScreen.swift */; };
+		5A1EEBCC2BCD6EA100422FD8 /* BackgroundKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBA82BCD6EA100422FD8 /* BackgroundKeyList.swift */; };
+		5A1EEBCD2BCD6EA100422FD8 /* ColorKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBA92BCD6EA100422FD8 /* ColorKeyList.swift */; };
+		5A1EEBCE2BCD6EA100422FD8 /* FontKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAA2BCD6EA100422FD8 /* FontKeyList.swift */; };
+		5A1EEBCF2BCD6EA100422FD8 /* IconKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAB2BCD6EA100422FD8 /* IconKeyList.swift */; };
+		5A1EEBD02BCD6EA100422FD8 /* SplitBackgroundContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAC2BCD6EA100422FD8 /* SplitBackgroundContainer.swift */; };
+		5A1EEBD12BCD6EA100422FD8 /* SurfaceKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAD2BCD6EA100422FD8 /* SurfaceKeyList.swift */; };
+		5A1EEBD22BCD6EA100422FD8 /* TextSurfaceKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAE2BCD6EA100422FD8 /* TextSurfaceKeyList.swift */; };
+		5A1EEBD32BCD6EA100422FD8 /* ThemeKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAF2BCD6EA100422FD8 /* ThemeKeyList.swift */; };
+		5A1EEBD42BCD6EA100422FD8 /* ValueKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBB02BCD6EA100422FD8 /* ValueKeyList.swift */; };
+		5A1EEBD52BCD6EA100422FD8 /* SettingsNavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBB22BCD6EA100422FD8 /* SettingsNavItem.swift */; };
+		5A1EEBD62BCD6EA100422FD8 /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBB32BCD6EA100422FD8 /* SettingsScene.swift */; };
+		5A1EEBE42BCD6EAF00422FD8 /* BackgroundKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDA2BCD6EAF00422FD8 /* BackgroundKeys+App.swift */; };
+		5A1EEBE52BCD6EAF00422FD8 /* ColorKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDB2BCD6EAF00422FD8 /* ColorKeys+App.swift */; };
+		5A1EEBE62BCD6EAF00422FD8 /* FontKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDC2BCD6EAF00422FD8 /* FontKeys+App.swift */; };
+		5A1EEBE72BCD6EAF00422FD8 /* IconKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDD2BCD6EAF00422FD8 /* IconKeys+App.swift */; };
+		5A1EEBE82BCD6EAF00422FD8 /* SurfaceKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDE2BCD6EAF00422FD8 /* SurfaceKeys+App.swift */; };
+		5A1EEBE92BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDF2BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift */; };
+		5A1EEBEA2BCD6EAF00422FD8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */; };
+		5A1EEBEB2BCD6EAF00422FD8 /* ThemeColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */; };
+		5A1EEBEC2BCD6EAF00422FD8 /* ValueKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE22BCD6EAF00422FD8 /* ValueKeys+App.swift */; };
+		5A1EEBEF2BCD6FB800422FD8 /* SnapTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBEE2BCD6FB800422FD8 /* SnapTheme */; };
+		5A1EEBF22BCD6FCD00422FD8 /* SnapTemplateShared in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF12BCD6FCD00422FD8 /* SnapTemplateShared */; };
+		5A1EEBF52BCD6FDF00422FD8 /* SnapMatchingNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */; };
+		5A1EEBF82BCD6FFC00422FD8 /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF72BCD6FFC00422FD8 /* SnapCore */; };
+		5A1EEBFB2BCD700D00422FD8 /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A1EEB552BCD6D6B00422FD8 /* SnapAppThemeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapAppThemeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1EEB582BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapAppThemeDemoApp.swift; sourceTree = "<group>"; };
-		5A1EEB5A2BCD6D6B00422FD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A1EEB5C2BCD6D6D00422FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1EEB5E2BCD6D6D00422FD8 /* SnapAppThemeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapAppThemeDemo.entitlements; sourceTree = "<group>"; };
 		5A1EEB602BCD6D6D00422FD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A1EEB672BCD6E9B00422FD8 /* Dependencies+Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dependencies+Environment.swift"; sourceTree = "<group>"; };
+		5A1EEB692BCD6E9B00422FD8 /* NavSidebarScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavSidebarScreen.swift; sourceTree = "<group>"; };
+		5A1EEB6A2BCD6E9B00422FD8 /* NavSplitScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavSplitScene.swift; sourceTree = "<group>"; };
+		5A1EEB6B2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarButtonSettings.swift; sourceTree = "<group>"; };
+		5A1EEB6D2BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavItem+TabConfiguration.swift"; sourceTree = "<group>"; };
+		5A1EEB6E2BCD6E9B00422FD8 /* NavTabScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTabScene.swift; sourceTree = "<group>"; };
+		5A1EEB6F2BCD6E9B00422FD8 /* NavTabSceneList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTabSceneList.swift; sourceTree = "<group>"; };
+		5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDependencies+ViewModifier.swift"; sourceTree = "<group>"; };
+		5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavItem+Template.swift"; sourceTree = "<group>"; };
+		5A1EEB742BCD6E9B00422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		5A1EEB782BCD6E9B00422FD8 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavItem.swift; sourceTree = "<group>"; };
+		5A1EEB7A2BCD6E9B00422FD8 /* NavItemDestinationWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavItemDestinationWrapper.swift; sourceTree = "<group>"; };
+		5A1EEB8C2BCD6EA100422FD8 /* ThemeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfig.swift; sourceTree = "<group>"; };
+		5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Colors.swift"; sourceTree = "<group>"; };
+		5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Fonts.swift"; sourceTree = "<group>"; };
+		5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Icons.swift"; sourceTree = "<group>"; };
+		5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+TextColors.swift"; sourceTree = "<group>"; };
+		5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Values.swift"; sourceTree = "<group>"; };
+		5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigScene.swift; sourceTree = "<group>"; };
+		5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigSelectionView.swift; sourceTree = "<group>"; };
+		5A1EEB942BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigToolbarButton.swift; sourceTree = "<group>"; };
+		5A1EEB962BCD6EA100422FD8 /* LabelStyleExampleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStyleExampleScreen.swift; sourceTree = "<group>"; };
+		5A1EEB972BCD6EA100422FD8 /* LabelStyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStyleModel.swift; sourceTree = "<group>"; };
+		5A1EEB982BCD6EA100422FD8 /* LabelStylesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStylesList.swift; sourceTree = "<group>"; };
+		5A1EEB9B2BCD6EA100422FD8 /* ExampleListLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListLoop.swift; sourceTree = "<group>"; };
+		5A1EEB9C2BCD6EA100422FD8 /* ExampleListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListRow.swift; sourceTree = "<group>"; };
+		5A1EEB9D2BCD6EA100422FD8 /* ExampleListRowVariants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListRowVariants.swift; sourceTree = "<group>"; };
+		5A1EEB9E2BCD6EA100422FD8 /* ExampleListScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListScene.swift; sourceTree = "<group>"; };
+		5A1EEB9F2BCD6EA100422FD8 /* ExampleListSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListSection.swift; sourceTree = "<group>"; };
+		5A1EEBA12BCD6EA100422FD8 /* BackgroundToggleContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundToggleContainer.swift; sourceTree = "<group>"; };
+		5A1EEBA22BCD6EA100422FD8 /* ExampleCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCardView.swift; sourceTree = "<group>"; };
+		5A1EEBA32BCD6EA100422FD8 /* ExampleTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTextView.swift; sourceTree = "<group>"; };
+		5A1EEBA52BCD6EA100422FD8 /* ExampleColorsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleColorsScreen.swift; sourceTree = "<group>"; };
+		5A1EEBA62BCD6EA100422FD8 /* ExampleTextScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTextScreen.swift; sourceTree = "<group>"; };
+		5A1EEBA82BCD6EA100422FD8 /* BackgroundKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBA92BCD6EA100422FD8 /* ColorKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBAA2BCD6EA100422FD8 /* FontKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBAB2BCD6EA100422FD8 /* IconKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBAC2BCD6EA100422FD8 /* SplitBackgroundContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitBackgroundContainer.swift; sourceTree = "<group>"; };
+		5A1EEBAD2BCD6EA100422FD8 /* SurfaceKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfaceKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBAE2BCD6EA100422FD8 /* TextSurfaceKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSurfaceKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBAF2BCD6EA100422FD8 /* ThemeKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBB02BCD6EA100422FD8 /* ValueKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBB22BCD6EA100422FD8 /* SettingsNavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavItem.swift; sourceTree = "<group>"; };
+		5A1EEBB32BCD6EA100422FD8 /* SettingsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
+		5A1EEBDA2BCD6EAF00422FD8 /* BackgroundKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BackgroundKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEBDB2BCD6EAF00422FD8 /* ColorKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEBDC2BCD6EAF00422FD8 /* FontKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEBDD2BCD6EAF00422FD8 /* IconKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IconKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEBDE2BCD6EAF00422FD8 /* SurfaceKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SurfaceKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEBDF2BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextSurfaceKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
+		5A1EEBE22BCD6EAF00422FD8 /* ValueKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValueKeys+App.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +146,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1EEBEF2BCD6FB800422FD8 /* SnapTheme in Frameworks */,
+				5A1EEBF22BCD6FCD00422FD8 /* SnapTemplateShared in Frameworks */,
+				5A1EEBF52BCD6FDF00422FD8 /* SnapMatchingNavigation in Frameworks */,
+				5A1EEBFB2BCD700D00422FD8 /* SnapSettingsService in Frameworks */,
+				5A1EEBF82BCD6FFC00422FD8 /* SnapCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB582BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift */,
-				5A1EEB5A2BCD6D6B00422FD8 /* ContentView.swift */,
+				5A1EEB7B2BCD6E9B00422FD8 /* AppStructure */,
+				5A1EEBB52BCD6EA100422FD8 /* Scenes */,
+				5A1EEBE32BCD6EAF00422FD8 /* Theme */,
 				5A1EEB5C2BCD6D6D00422FD8 /* Assets.xcassets */,
 				5A1EEB5E2BCD6D6D00422FD8 /* SnapAppThemeDemo.entitlements */,
 				5A1EEB5F2BCD6D6D00422FD8 /* Preview Content */,
@@ -67,6 +193,181 @@
 				5A1EEB602BCD6D6D00422FD8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A1EEB682BCD6E9B00422FD8 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB672BCD6E9B00422FD8 /* Dependencies+Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB692BCD6E9B00422FD8 /* NavSidebarScreen.swift */,
+				5A1EEB6A2BCD6E9B00422FD8 /* NavSplitScene.swift */,
+				5A1EEB6B2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift */,
+			);
+			path = SplitScene;
+			sourceTree = "<group>";
+		};
+		5A1EEB702BCD6E9B00422FD8 /* TabScene */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB6D2BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift */,
+				5A1EEB6E2BCD6E9B00422FD8 /* NavTabScene.swift */,
+				5A1EEB6F2BCD6E9B00422FD8 /* NavTabSceneList.swift */,
+			);
+			path = TabScene;
+			sourceTree = "<group>";
+		};
+		5A1EEB752BCD6E9B00422FD8 /* SNLAppTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB682BCD6E9B00422FD8 /* Environment */,
+				5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */,
+				5A1EEB702BCD6E9B00422FD8 /* TabScene */,
+				5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */,
+				5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */,
+				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
+				5A1EEB742BCD6E9B00422FD8 /* README.md */,
+			);
+			path = SNLAppTemplate;
+			sourceTree = "<group>";
+		};
+		5A1EEB7B2BCD6E9B00422FD8 /* AppStructure */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB752BCD6E9B00422FD8 /* SNLAppTemplate */,
+				5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */,
+				5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */,
+				5A1EEB782BCD6E9B00422FD8 /* AppState.swift */,
+				5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */,
+				5A1EEB7A2BCD6E9B00422FD8 /* NavItemDestinationWrapper.swift */,
+			);
+			path = AppStructure;
+			sourceTree = "<group>";
+		};
+		5A1EEB952BCD6EA100422FD8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB8C2BCD6EA100422FD8 /* ThemeConfig.swift */,
+				5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */,
+				5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */,
+				5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */,
+				5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */,
+				5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Values.swift */,
+				5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */,
+				5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */,
+				5A1EEB942BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		5A1EEB992BCD6EA100422FD8 /* LabelStyle */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB962BCD6EA100422FD8 /* LabelStyleExampleScreen.swift */,
+				5A1EEB972BCD6EA100422FD8 /* LabelStyleModel.swift */,
+				5A1EEB982BCD6EA100422FD8 /* LabelStylesList.swift */,
+			);
+			path = LabelStyle;
+			sourceTree = "<group>";
+		};
+		5A1EEB9A2BCD6EA100422FD8 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB992BCD6EA100422FD8 /* LabelStyle */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		5A1EEBA02BCD6EA100422FD8 /* ExampleList */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB9B2BCD6EA100422FD8 /* ExampleListLoop.swift */,
+				5A1EEB9C2BCD6EA100422FD8 /* ExampleListRow.swift */,
+				5A1EEB9D2BCD6EA100422FD8 /* ExampleListRowVariants.swift */,
+				5A1EEB9E2BCD6EA100422FD8 /* ExampleListScene.swift */,
+				5A1EEB9F2BCD6EA100422FD8 /* ExampleListSection.swift */,
+			);
+			path = ExampleList;
+			sourceTree = "<group>";
+		};
+		5A1EEBA42BCD6EA100422FD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEBA12BCD6EA100422FD8 /* BackgroundToggleContainer.swift */,
+				5A1EEBA22BCD6EA100422FD8 /* ExampleCardView.swift */,
+				5A1EEBA32BCD6EA100422FD8 /* ExampleTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A1EEBA72BCD6EA100422FD8 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEBA02BCD6EA100422FD8 /* ExampleList */,
+				5A1EEBA42BCD6EA100422FD8 /* Views */,
+				5A1EEBA52BCD6EA100422FD8 /* ExampleColorsScreen.swift */,
+				5A1EEBA62BCD6EA100422FD8 /* ExampleTextScreen.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		5A1EEBB12BCD6EA100422FD8 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEBA82BCD6EA100422FD8 /* BackgroundKeyList.swift */,
+				5A1EEBA92BCD6EA100422FD8 /* ColorKeyList.swift */,
+				5A1EEBAA2BCD6EA100422FD8 /* FontKeyList.swift */,
+				5A1EEBAB2BCD6EA100422FD8 /* IconKeyList.swift */,
+				5A1EEBAC2BCD6EA100422FD8 /* SplitBackgroundContainer.swift */,
+				5A1EEBAD2BCD6EA100422FD8 /* SurfaceKeyList.swift */,
+				5A1EEBAE2BCD6EA100422FD8 /* TextSurfaceKeyList.swift */,
+				5A1EEBAF2BCD6EA100422FD8 /* ThemeKeyList.swift */,
+				5A1EEBB02BCD6EA100422FD8 /* ValueKeyList.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		5A1EEBB42BCD6EA100422FD8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEBB22BCD6EA100422FD8 /* SettingsNavItem.swift */,
+				5A1EEBB32BCD6EA100422FD8 /* SettingsScene.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5A1EEBB52BCD6EA100422FD8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB952BCD6EA100422FD8 /* Configuration */,
+				5A1EEB9A2BCD6EA100422FD8 /* Elements */,
+				5A1EEBA72BCD6EA100422FD8 /* Examples */,
+				5A1EEBB12BCD6EA100422FD8 /* Keys */,
+				5A1EEBB42BCD6EA100422FD8 /* Settings */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5A1EEBE32BCD6EAF00422FD8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEBDA2BCD6EAF00422FD8 /* BackgroundKeys+App.swift */,
+				5A1EEBDB2BCD6EAF00422FD8 /* ColorKeys+App.swift */,
+				5A1EEBDC2BCD6EAF00422FD8 /* FontKeys+App.swift */,
+				5A1EEBDD2BCD6EAF00422FD8 /* IconKeys+App.swift */,
+				5A1EEBDE2BCD6EAF00422FD8 /* SurfaceKeys+App.swift */,
+				5A1EEBDF2BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift */,
+				5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */,
+				5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */,
+				5A1EEBE22BCD6EAF00422FD8 /* ValueKeys+App.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +386,13 @@
 			dependencies = (
 			);
 			name = SnapAppThemeDemo;
+			packageProductDependencies = (
+				5A1EEBEE2BCD6FB800422FD8 /* SnapTheme */,
+				5A1EEBF12BCD6FCD00422FD8 /* SnapTemplateShared */,
+				5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */,
+				5A1EEBF72BCD6FFC00422FD8 /* SnapCore */,
+				5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */,
+			);
 			productName = SnapAppThemeDemo;
 			productReference = 5A1EEB552BCD6D6B00422FD8 /* SnapAppThemeDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +421,13 @@
 				Base,
 			);
 			mainGroup = 5A1EEB4C2BCD6D6B00422FD8;
+			packageReferences = (
+				5A1EEBED2BCD6FB800422FD8 /* XCRemoteSwiftPackageReference "snap-theme" */,
+				5A1EEBF02BCD6FCD00422FD8 /* XCRemoteSwiftPackageReference "snap-template-shared" */,
+				5A1EEBF32BCD6FDF00422FD8 /* XCRemoteSwiftPackageReference "snap-matching-navigation" */,
+				5A1EEBF62BCD6FFC00422FD8 /* XCRemoteSwiftPackageReference "snap-core" */,
+				5A1EEBF92BCD700D00422FD8 /* XCRemoteSwiftPackageReference "snap-settings-service" */,
+			);
 			productRefGroup = 5A1EEB562BCD6D6B00422FD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +442,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1EEB862BCD6E9B00422FD8 /* README.md in Resources */,
+				5A1EEBEB2BCD6EAF00422FD8 /* ThemeColors.xcassets in Resources */,
 				5A1EEB612BCD6D6D00422FD8 /* Preview Assets.xcassets in Resources */,
 				5A1EEB5D2BCD6D6D00422FD8 /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +456,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A1EEB5B2BCD6D6B00422FD8 /* ContentView.swift in Sources */,
+				5A1EEBE62BCD6EAF00422FD8 /* FontKeys+App.swift in Sources */,
+				5A1EEB7D2BCD6E9B00422FD8 /* NavSidebarScreen.swift in Sources */,
+				5A1EEBE92BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift in Sources */,
+				5A1EEBB82BCD6EA100422FD8 /* ThemeConfig+Fonts.swift in Sources */,
+				5A1EEBE42BCD6EAF00422FD8 /* BackgroundKeys+App.swift in Sources */,
+				5A1EEB8B2BCD6E9B00422FD8 /* NavItemDestinationWrapper.swift in Sources */,
+				5A1EEBE82BCD6EAF00422FD8 /* SurfaceKeys+App.swift in Sources */,
+				5A1EEBBB2BCD6EA100422FD8 /* ThemeConfig+Values.swift in Sources */,
+				5A1EEBC92BCD6EA100422FD8 /* ExampleTextView.swift in Sources */,
+				5A1EEBD52BCD6EA100422FD8 /* SettingsNavItem.swift in Sources */,
+				5A1EEBC42BCD6EA100422FD8 /* ExampleListRowVariants.swift in Sources */,
+				5A1EEBC72BCD6EA100422FD8 /* BackgroundToggleContainer.swift in Sources */,
+				5A1EEBD62BCD6EA100422FD8 /* SettingsScene.swift in Sources */,
+				5A1EEBBC2BCD6EA100422FD8 /* ThemeConfigScene.swift in Sources */,
+				5A1EEBBA2BCD6EA100422FD8 /* ThemeConfig+TextColors.swift in Sources */,
+				5A1EEBC52BCD6EA100422FD8 /* ExampleListScene.swift in Sources */,
+				5A1EEBD42BCD6EA100422FD8 /* ValueKeyList.swift in Sources */,
+				5A1EEBCC2BCD6EA100422FD8 /* BackgroundKeyList.swift in Sources */,
+				5A1EEB8A2BCD6E9B00422FD8 /* NavItem.swift in Sources */,
+				5A1EEBC62BCD6EA100422FD8 /* ExampleListSection.swift in Sources */,
+				5A1EEB832BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift in Sources */,
+				5A1EEBD02BCD6EA100422FD8 /* SplitBackgroundContainer.swift in Sources */,
+				5A1EEB802BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift in Sources */,
+				5A1EEBC82BCD6EA100422FD8 /* ExampleCardView.swift in Sources */,
+				5A1EEBD12BCD6EA100422FD8 /* SurfaceKeyList.swift in Sources */,
+				5A1EEBBF2BCD6EA100422FD8 /* LabelStyleExampleScreen.swift in Sources */,
+				5A1EEBCD2BCD6EA100422FD8 /* ColorKeyList.swift in Sources */,
+				5A1EEBCF2BCD6EA100422FD8 /* IconKeyList.swift in Sources */,
+				5A1EEB7E2BCD6E9B00422FD8 /* NavSplitScene.swift in Sources */,
+				5A1EEBC32BCD6EA100422FD8 /* ExampleListRow.swift in Sources */,
+				5A1EEB7C2BCD6E9B00422FD8 /* Dependencies+Environment.swift in Sources */,
+				5A1EEBB72BCD6EA100422FD8 /* ThemeConfig+Colors.swift in Sources */,
+				5A1EEBD32BCD6EA100422FD8 /* ThemeKeyList.swift in Sources */,
+				5A1EEB872BCD6E9B00422FD8 /* AppContainer.swift in Sources */,
+				5A1EEBCB2BCD6EA100422FD8 /* ExampleTextScreen.swift in Sources */,
+				5A1EEB7F2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift in Sources */,
+				5A1EEBE72BCD6EAF00422FD8 /* IconKeys+App.swift in Sources */,
+				5A1EEB842BCD6E9B00422FD8 /* DependencyContainer.swift in Sources */,
+				5A1EEB852BCD6E9B00422FD8 /* NavItem+Template.swift in Sources */,
+				5A1EEBC22BCD6EA100422FD8 /* ExampleListLoop.swift in Sources */,
+				5A1EEB892BCD6E9B00422FD8 /* AppState.swift in Sources */,
 				5A1EEB592BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift in Sources */,
+				5A1EEB882BCD6E9B00422FD8 /* AppDependencies.swift in Sources */,
+				5A1EEBC02BCD6EA100422FD8 /* LabelStyleModel.swift in Sources */,
+				5A1EEBBD2BCD6EA100422FD8 /* ThemeConfigSelectionView.swift in Sources */,
+				5A1EEBCA2BCD6EA100422FD8 /* ExampleColorsScreen.swift in Sources */,
+				5A1EEB822BCD6E9B00422FD8 /* NavTabSceneList.swift in Sources */,
+				5A1EEB812BCD6E9B00422FD8 /* NavTabScene.swift in Sources */,
+				5A1EEBC12BCD6EA100422FD8 /* LabelStylesList.swift in Sources */,
+				5A1EEBB92BCD6EA100422FD8 /* ThemeConfig+Icons.swift in Sources */,
+				5A1EEBEC2BCD6EAF00422FD8 /* ValueKeys+App.swift in Sources */,
+				5A1EEBEA2BCD6EAF00422FD8 /* Theme.swift in Sources */,
+				5A1EEBBE2BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift in Sources */,
+				5A1EEBCE2BCD6EA100422FD8 /* FontKeyList.swift in Sources */,
+				5A1EEBE52BCD6EAF00422FD8 /* ColorKeys+App.swift in Sources */,
+				5A1EEBB62BCD6EA100422FD8 /* ThemeConfig.swift in Sources */,
+				5A1EEBD22BCD6EA100422FD8 /* TextSurfaceKeyList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +731,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A1EEBED2BCD6FB800422FD8 /* XCRemoteSwiftPackageReference "snap-theme" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonnickel/snap-theme";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5A1EEBF02BCD6FCD00422FD8 /* XCRemoteSwiftPackageReference "snap-template-shared" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonnickel/snap-template-shared.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5A1EEBF32BCD6FDF00422FD8 /* XCRemoteSwiftPackageReference "snap-matching-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonnickel/snap-matching-navigation";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5A1EEBF62BCD6FFC00422FD8 /* XCRemoteSwiftPackageReference "snap-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonnickel/snap-core";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5A1EEBF92BCD700D00422FD8 /* XCRemoteSwiftPackageReference "snap-settings-service" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonnickel/snap-settings-service";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A1EEBEE2BCD6FB800422FD8 /* SnapTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1EEBED2BCD6FB800422FD8 /* XCRemoteSwiftPackageReference "snap-theme" */;
+			productName = SnapTheme;
+		};
+		5A1EEBF12BCD6FCD00422FD8 /* SnapTemplateShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1EEBF02BCD6FCD00422FD8 /* XCRemoteSwiftPackageReference "snap-template-shared" */;
+			productName = SnapTemplateShared;
+		};
+		5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1EEBF32BCD6FDF00422FD8 /* XCRemoteSwiftPackageReference "snap-matching-navigation" */;
+			productName = SnapMatchingNavigation;
+		};
+		5A1EEBF72BCD6FFC00422FD8 /* SnapCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1EEBF62BCD6FFC00422FD8 /* XCRemoteSwiftPackageReference "snap-core" */;
+			productName = SnapCore;
+		};
+		5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1EEBF92BCD700D00422FD8 /* XCRemoteSwiftPackageReference "snap-settings-service" */;
+			productName = SnapSettingsService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A1EEB4D2BCD6D6B00422FD8 /* Project object */;
 }
