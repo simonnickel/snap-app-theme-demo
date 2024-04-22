@@ -39,10 +39,10 @@ struct ExampleColorsScreen : View {
 					.labelStyle(.themeSectionHeader(prominent: true))
 			}
 			
-			BackgroundToggleContainer {
+			BackgroundToggleContainer { isContent, isHighlighted in
 				ThemeVStack(alignment: .leading, spacing: .cardPadding) {
 					
-					Text(".content")
+					Text((isContent ? ".content\(isHighlighted ? ", highlighted" : "")" : ".scene" ) + " (tap to switch)")
 						.theme(font: .labelTag)
 					
 					ThemeCard(style: .contentSecondary, level: .first) {
@@ -89,7 +89,7 @@ struct ExampleColorsScreen : View {
 					.labelStyle(.themeSectionHeader(prominent: true))
 			}
 			
-			BackgroundToggleContainer {
+			BackgroundToggleContainer { _, _ in
 				ThemeVStack(alignment: .leading, spacing: .spacingElements) {
 					
 					ThemeHStack(spacing: .spacingElements) {
@@ -162,7 +162,7 @@ struct ExampleColorsScreen : View {
 					.labelStyle(.themeSectionHeader(prominent: true))
 			}
 			
-			BackgroundToggleContainer {
+			BackgroundToggleContainer { _, _  in
 				
 				ThemeVStack(alignment: .leading, spacing: .spacingGroups) {
 					

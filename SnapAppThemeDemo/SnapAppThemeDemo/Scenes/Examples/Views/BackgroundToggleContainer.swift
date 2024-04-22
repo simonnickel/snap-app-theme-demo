@@ -10,7 +10,7 @@ import SnapTheme
 
 struct BackgroundToggleContainer<Content: View>: View {
 	
-	@ViewBuilder let content: () -> Content
+	@ViewBuilder let content: (_ content: Bool, _ highlighted: Bool) -> Content
 	
 	@State private var background: Theme.BackgroundKey = .content
 	@State private var highlighted: Bool = false
@@ -20,7 +20,7 @@ struct BackgroundToggleContainer<Content: View>: View {
 			style: .custom(color: .foreground, background: background),
 			highlighted: highlighted
 		) {
-			content()
+			content(background == .content, highlighted)
 		}
 		.contentShape(Rectangle())
 		.onTapGesture {
@@ -46,7 +46,7 @@ struct BackgroundToggleContainer<Content: View>: View {
 		
 		Section {
 			
-			BackgroundToggleContainer {
+			BackgroundToggleContainer { _, _  in
 				Text("Tap me")
 			}
 			
