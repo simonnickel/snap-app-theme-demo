@@ -74,7 +74,7 @@ struct SurfaceKeyList: View {
 	SurfaceKeyList()
 		.environment(\.theme, Theme(
 			icons: [:],
-			values: [:],
+			numbers: [:],
 			colors: [:],
 			fonts: [:]
 		))

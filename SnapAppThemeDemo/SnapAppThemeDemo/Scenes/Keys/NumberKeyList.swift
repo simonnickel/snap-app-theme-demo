@@ -1,5 +1,5 @@
 //
-//  ValueKeyList.swift
+//  NumberKeyList.swift
 //  SnapAppThemeDemo
 //
 //  Created by Simon Nickel on 08.05.23.
@@ -9,7 +9,7 @@ import SwiftUI
 import SnapCore
 import SnapTheme
 
-struct ValueKeyList: View {
+struct NumberKeyList: View {
 	
 	@Environment(\.theme) private var theme
 	
@@ -18,7 +18,7 @@ struct ValueKeyList: View {
 		ThemeKeyList {
 			Group {
 
-				ThemeKeyListSections(baseKeys: Theme.ValueKey.allBaseKeys, appKeys: Theme.ValueKey.allAppKeys) { key in
+				ThemeKeyListSections(baseKeys: Theme.NumberKey.allBaseKeys, appKeys: Theme.NumberKey.allAppKeys) { key in
 					ListItem(key: key)
 				}
 				
@@ -34,12 +34,12 @@ struct ValueKeyList: View {
 		
 		@Environment(\.theme) private var theme
 		
-		let key: Theme.ValueKey
+		let key: Theme.NumberKey
 		
 		var body: some View {
 			
-			let shouldPreventDisable = theme.values.count == 0
-			let hasDefinition = theme.values[key] != nil
+			let shouldPreventDisable = theme.numbers.count == 0
+			let hasDefinition = theme.numbers[key] != nil
 			
 			HStack {
 				Text(key.key)
@@ -47,8 +47,8 @@ struct ValueKeyList: View {
 					.theme(font: .listLabel)
 				
 				Group {
-					if let value = theme.value(key) {
-						Text(String(format: "%.1f", value))
+					if let number = theme.value(key) {
+						Text(String(format: "%.1f", number))
 					} else {
 						Text("nil")
 					}
@@ -67,10 +67,10 @@ struct ValueKeyList: View {
 
 #Preview {
 	
-	ValueKeyList()
+	NumberKeyList()
 		.environment(\.theme, Theme(
 			icons: [:],
-			values: [
+			numbers: [
 				.spacingSections : 10,
 			],
 			colors: [:],

@@ -19,8 +19,8 @@ struct AppState {
 		ThemeConfig.fontDesignBase,
 		ThemeConfig.textSurfacesBase,
 		ThemeConfig.iconsBase,
-		ThemeConfig.valuesBase,
-		ThemeConfig.valuesScaleBase
+		ThemeConfig.numbersBase,
+		ThemeConfig.numbersScaleBase
 	]
 	
 	var showThemeConfiguration = false

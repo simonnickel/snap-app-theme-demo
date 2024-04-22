@@ -63,7 +63,7 @@ struct IconKeyList: View {
 	IconKeyList()
 		.environment(\.theme, Theme(
 			icons: [:],
-			values: [:],
+			numbers: [:],
 			colors: [:],
 			fonts: [:]
 		))

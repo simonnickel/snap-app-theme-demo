@@ -70,7 +70,7 @@ struct BackgroundKeyList: View {
 	BackgroundKeyList()
 		.environment(\.theme, Theme(
 			icons: [:],
-			values: [:],
+			numbers: [:],
 			colors: [:],
 			fonts: [:]
 		))

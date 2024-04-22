@@ -1,31 +1,31 @@
 {
-  "originHash" : "f4900327e100713b65443e9ce06cd81d6c8cbd56fdd0923e45a6898d65bda06e",
+  "originHash" : "8fe065b63b735aa6c97a189b242ec50a2c5b25a1c175b956566e5ac310aedd19",
   "pins" : [
     {
       "identity" : "snap-core",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/simonnickel/snap-core.git",
+      "location" : "https://github.com/simonnickel/snap-core",
       "state" : {
         "branch" : "main",
-        "revision" : "568685437921528e74e306f3d2ecd6fe5463eca0"
+        "revision" : "8f83dd6453e2c498d195c28f4cdce2326ee7f12c"
       }
     },
     {
       "identity" : "snap-matching-navigation",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/simonnickel/snap-matching-navigation.git",
+      "location" : "https://github.com/simonnickel/snap-matching-navigation",
       "state" : {
         "branch" : "main",
-        "revision" : "d32ca63b2da850f6659cdd820081f2f4e19de3a0"
+        "revision" : "2aa5f7e3133aaef8ec5f58ac35b5c757f6696ce5"
       }
     },
     {
       "identity" : "snap-settings-service",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/simonnickel/snap-settings-service.git",
+      "location" : "https://github.com/simonnickel/snap-settings-service",
       "state" : {
         "branch" : "main",
-        "revision" : "efe806ef309c50a782815af2053088216260877e"
+        "revision" : "6fa3bd1844e2581f1157ecb96c05ba2637247968"
       }
     },
     {
@@ -34,7 +34,7 @@
       "location" : "https://github.com/simonnickel/snap-template-shared.git",
       "state" : {
         "branch" : "main",
-        "revision" : "98f38d5bc4f73a3040619a8e4878df0b0793b8d6"
+        "revision" : "83e43d66875c866a1ec1bc5830851aad16e5dd4a"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/simonnickel/snap-theme",
       "state" : {
         "branch" : "main",
-        "revision" : "dcdab82c60de6b8e26cc73a83ce965a7047be48e"
+        "revision" : "287568f66b857ae631b1211a61e5df3da4c8a9dc"
       }
     }
   ],

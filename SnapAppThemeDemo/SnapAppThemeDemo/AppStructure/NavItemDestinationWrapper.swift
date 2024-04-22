@@ -41,7 +41,7 @@ struct NavItemDestinationWrapper: View {
 			case .keysBackground: BackgroundKeyList()
 			case .keysFont: FontKeyList()
 			case .keysTextSurface: TextSurfaceKeyList()
-			case .keysValue: ValueKeyList()
+			case .keysNumber: NumberKeyList()
 			case .keysIcon: IconKeyList()
 				
 			default: AnyView(navItem.destinationDefault())

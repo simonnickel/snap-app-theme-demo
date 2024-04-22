@@ -70,7 +70,7 @@ struct TextSurfaceKeyList: View {
 	TextSurfaceKeyList()
 		.environment(\.theme, Theme(
 			icons: [:],
-			values: [:],
+			numbers: [:],
 			colors: [:],
 			fonts: [:],
 			textSurfaces: [:]

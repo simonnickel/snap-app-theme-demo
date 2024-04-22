@@ -79,7 +79,7 @@ struct ColorKeyList: View {
 	return ColorKeyList()
 		.environment(\.theme, Theme(
 			icons: [:],
-			values: [:],
+			numbers: [:],
 			colors: [
 				:
 					//				.background : .color(.green),

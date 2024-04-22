@@ -28,9 +28,9 @@ struct ThemeConfigScene: View {
 				ConfigSection(title: "TextSurfaces", configSectionID: "textSurface") {
 					ThemeConfigSelectionView(options: [.textSurfacesBase, .textSurfacesAlternative])
 				}
-				ConfigSection(title: "Values", configSectionID: "value") {
-					ThemeConfigSelectionView(options: [.valuesBase, .valuesAlternative])
-					ThemeConfigSelectionView(options: [.valuesScale08, .valuesScale09, .valuesScaleBase, .valuesScale11, .valuesScale12])
+				ConfigSection(title: "Numbers", configSectionID: "number") {
+					ThemeConfigSelectionView(options: [.numbersBase, .numbersAlternative])
+					ThemeConfigSelectionView(options: [.numbersScale08, .numbersScale09, .numbersScaleBase, .numbersScale11, .numbersScale12])
 				}
 				ConfigSection(title: "Icons", configSectionID: "icon") {
 					ThemeConfigSelectionView(options: [.iconsBase, .iconsAlternative])

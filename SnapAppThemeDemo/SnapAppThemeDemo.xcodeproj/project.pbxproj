@@ -31,7 +31,7 @@
 		5A1EEBB82BCD6EA100422FD8 /* ThemeConfig+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */; };
 		5A1EEBB92BCD6EA100422FD8 /* ThemeConfig+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */; };
 		5A1EEBBA2BCD6EA100422FD8 /* ThemeConfig+TextColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */; };
-		5A1EEBBB2BCD6EA100422FD8 /* ThemeConfig+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Values.swift */; };
+		5A1EEBBB2BCD6EA100422FD8 /* ThemeConfig+Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Numbers.swift */; };
 		5A1EEBBC2BCD6EA100422FD8 /* ThemeConfigScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */; };
 		5A1EEBBD2BCD6EA100422FD8 /* ThemeConfigSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */; };
 		5A1EEBBE2BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB942BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift */; };
@@ -56,7 +56,7 @@
 		5A1EEBD12BCD6EA100422FD8 /* SurfaceKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAD2BCD6EA100422FD8 /* SurfaceKeyList.swift */; };
 		5A1EEBD22BCD6EA100422FD8 /* TextSurfaceKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAE2BCD6EA100422FD8 /* TextSurfaceKeyList.swift */; };
 		5A1EEBD32BCD6EA100422FD8 /* ThemeKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBAF2BCD6EA100422FD8 /* ThemeKeyList.swift */; };
-		5A1EEBD42BCD6EA100422FD8 /* ValueKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBB02BCD6EA100422FD8 /* ValueKeyList.swift */; };
+		5A1EEBD42BCD6EA100422FD8 /* NumberKeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBB02BCD6EA100422FD8 /* NumberKeyList.swift */; };
 		5A1EEBD52BCD6EA100422FD8 /* SettingsNavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBB22BCD6EA100422FD8 /* SettingsNavItem.swift */; };
 		5A1EEBD62BCD6EA100422FD8 /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBB32BCD6EA100422FD8 /* SettingsScene.swift */; };
 		5A1EEBE42BCD6EAF00422FD8 /* BackgroundKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDA2BCD6EAF00422FD8 /* BackgroundKeys+App.swift */; };
@@ -67,7 +67,7 @@
 		5A1EEBE92BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDF2BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift */; };
 		5A1EEBEA2BCD6EAF00422FD8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */; };
 		5A1EEBEB2BCD6EAF00422FD8 /* ThemeColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */; };
-		5A1EEBEC2BCD6EAF00422FD8 /* ValueKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE22BCD6EAF00422FD8 /* ValueKeys+App.swift */; };
+		5A1EEBEC2BCD6EAF00422FD8 /* NumberKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */; };
 		5A1EEBEF2BCD6FB800422FD8 /* SnapTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBEE2BCD6FB800422FD8 /* SnapTheme */; };
 		5A1EEBF22BCD6FCD00422FD8 /* SnapTemplateShared in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF12BCD6FCD00422FD8 /* SnapTemplateShared */; };
 		5A1EEBF52BCD6FDF00422FD8 /* SnapMatchingNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */; };
@@ -102,7 +102,7 @@
 		5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Fonts.swift"; sourceTree = "<group>"; };
 		5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Icons.swift"; sourceTree = "<group>"; };
 		5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+TextColors.swift"; sourceTree = "<group>"; };
-		5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Values.swift"; sourceTree = "<group>"; };
+		5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Numbers.swift"; sourceTree = "<group>"; };
 		5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigScene.swift; sourceTree = "<group>"; };
 		5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigSelectionView.swift; sourceTree = "<group>"; };
 		5A1EEB942BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigToolbarButton.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		5A1EEBAD2BCD6EA100422FD8 /* SurfaceKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfaceKeyList.swift; sourceTree = "<group>"; };
 		5A1EEBAE2BCD6EA100422FD8 /* TextSurfaceKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSurfaceKeyList.swift; sourceTree = "<group>"; };
 		5A1EEBAF2BCD6EA100422FD8 /* ThemeKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeKeyList.swift; sourceTree = "<group>"; };
-		5A1EEBB02BCD6EA100422FD8 /* ValueKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueKeyList.swift; sourceTree = "<group>"; };
+		5A1EEBB02BCD6EA100422FD8 /* NumberKeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberKeyList.swift; sourceTree = "<group>"; };
 		5A1EEBB22BCD6EA100422FD8 /* SettingsNavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavItem.swift; sourceTree = "<group>"; };
 		5A1EEBB32BCD6EA100422FD8 /* SettingsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
 		5A1EEBDA2BCD6EAF00422FD8 /* BackgroundKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BackgroundKeys+App.swift"; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		5A1EEBDF2BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextSurfaceKeys+App.swift"; sourceTree = "<group>"; };
 		5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
-		5A1EEBE22BCD6EAF00422FD8 /* ValueKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ValueKeys+App.swift"; sourceTree = "<group>"; };
+		5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberKeys+App.swift"; sourceTree = "<group>"; };
 		5A1EEC172BCD740700422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5A1EEC192BCD740B00422FD8 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = TODO.md; path = ../TODO.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,7 +227,7 @@
 			path = TabScene;
 			sourceTree = "<group>";
 		};
-		5A1EEB752BCD6E9B00422FD8 /* SNLAppTemplate */ = {
+		5A1EEB752BCD6E9B00422FD8 /* SnapAppTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				5A1EEB682BCD6E9B00422FD8 /* Environment */,
@@ -238,13 +238,13 @@
 				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
 				5A1EEB742BCD6E9B00422FD8 /* README.md */,
 			);
-			path = SNLAppTemplate;
+			path = SnapAppTemplate;
 			sourceTree = "<group>";
 		};
 		5A1EEB7B2BCD6E9B00422FD8 /* AppStructure */ = {
 			isa = PBXGroup;
 			children = (
-				5A1EEB752BCD6E9B00422FD8 /* SNLAppTemplate */,
+				5A1EEB752BCD6E9B00422FD8 /* SnapAppTemplate */,
 				5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */,
 				5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */,
 				5A1EEB782BCD6E9B00422FD8 /* AppState.swift */,
@@ -262,7 +262,7 @@
 				5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */,
 				5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */,
 				5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */,
-				5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Values.swift */,
+				5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Numbers.swift */,
 				5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */,
 				5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */,
 				5A1EEB942BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift */,
@@ -332,7 +332,7 @@
 				5A1EEBAD2BCD6EA100422FD8 /* SurfaceKeyList.swift */,
 				5A1EEBAE2BCD6EA100422FD8 /* TextSurfaceKeyList.swift */,
 				5A1EEBAF2BCD6EA100422FD8 /* ThemeKeyList.swift */,
-				5A1EEBB02BCD6EA100422FD8 /* ValueKeyList.swift */,
+				5A1EEBB02BCD6EA100422FD8 /* NumberKeyList.swift */,
 			);
 			path = Keys;
 			sourceTree = "<group>";
@@ -369,7 +369,7 @@
 				5A1EEBDF2BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift */,
 				5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */,
 				5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */,
-				5A1EEBE22BCD6EAF00422FD8 /* ValueKeys+App.swift */,
+				5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -467,7 +467,7 @@
 				5A1EEBE42BCD6EAF00422FD8 /* BackgroundKeys+App.swift in Sources */,
 				5A1EEB8B2BCD6E9B00422FD8 /* NavItemDestinationWrapper.swift in Sources */,
 				5A1EEBE82BCD6EAF00422FD8 /* SurfaceKeys+App.swift in Sources */,
-				5A1EEBBB2BCD6EA100422FD8 /* ThemeConfig+Values.swift in Sources */,
+				5A1EEBBB2BCD6EA100422FD8 /* ThemeConfig+Numbers.swift in Sources */,
 				5A1EEBC92BCD6EA100422FD8 /* ExampleTextView.swift in Sources */,
 				5A1EEBD52BCD6EA100422FD8 /* SettingsNavItem.swift in Sources */,
 				5A1EEBC42BCD6EA100422FD8 /* ExampleListRowVariants.swift in Sources */,
@@ -476,7 +476,7 @@
 				5A1EEBBC2BCD6EA100422FD8 /* ThemeConfigScene.swift in Sources */,
 				5A1EEBBA2BCD6EA100422FD8 /* ThemeConfig+TextColors.swift in Sources */,
 				5A1EEBC52BCD6EA100422FD8 /* ExampleListScene.swift in Sources */,
-				5A1EEBD42BCD6EA100422FD8 /* ValueKeyList.swift in Sources */,
+				5A1EEBD42BCD6EA100422FD8 /* NumberKeyList.swift in Sources */,
 				5A1EEBCC2BCD6EA100422FD8 /* BackgroundKeyList.swift in Sources */,
 				5A1EEB8A2BCD6E9B00422FD8 /* NavItem.swift in Sources */,
 				5A1EEBC62BCD6EA100422FD8 /* ExampleListSection.swift in Sources */,
@@ -510,7 +510,7 @@
 				5A1EEB812BCD6E9B00422FD8 /* NavTabScene.swift in Sources */,
 				5A1EEBC12BCD6EA100422FD8 /* LabelStylesList.swift in Sources */,
 				5A1EEBB92BCD6EA100422FD8 /* ThemeConfig+Icons.swift in Sources */,
-				5A1EEBEC2BCD6EAF00422FD8 /* ValueKeys+App.swift in Sources */,
+				5A1EEBEC2BCD6EAF00422FD8 /* NumberKeys+App.swift in Sources */,
 				5A1EEBEA2BCD6EAF00422FD8 /* Theme.swift in Sources */,
 				5A1EEBBE2BCD6EA100422FD8 /* ThemeConfigToolbarButton.swift in Sources */,
 				5A1EEBCE2BCD6EA100422FD8 /* FontKeyList.swift in Sources */,

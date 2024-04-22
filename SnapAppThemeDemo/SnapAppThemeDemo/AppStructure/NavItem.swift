@@ -22,7 +22,7 @@ enum NavItem: MNavItem, Codable, Equatable, Hashable, Identifiable {
 	case elementLabelStyles
 	
 	case keys
-	case keysColor, keysSurface, keysBackground, keysFont, keysTextSurface, keysValue, keysIcon
+	case keysColor, keysSurface, keysBackground, keysFont, keysTextSurface, keysNumber, keysIcon
 	
 	
 	// MARK: - Navigation
@@ -55,7 +55,7 @@ enum NavItem: MNavItem, Codable, Equatable, Hashable, Identifiable {
 			]
 				
 			case .keys: [
-				.keysColor, .keysSurface, .keysBackground, .keysFont, .keysTextSurface, .keysValue, .keysIcon
+				.keysColor, .keysSurface, .keysBackground, .keysFont, .keysTextSurface, .keysNumber, .keysIcon
 			]
 			default: []
 		}
@@ -81,7 +81,7 @@ enum NavItem: MNavItem, Codable, Equatable, Hashable, Identifiable {
 			case .keysBackground: "Background Keys"
 			case .keysFont: "Font Keys"
 			case .keysTextSurface: "Text Surface Keys"
-			case .keysValue: "Value Keys"
+			case .keysNumber: "Number Keys"
 			case .keysIcon: "Icon Keys"
 				
 			default: self.id.uppercasedFirstLetter
@@ -99,7 +99,7 @@ enum NavItem: MNavItem, Codable, Equatable, Hashable, Identifiable {
 			case .exampleText: .navText
 			case .exampleLists: .navLists
 				
-			case .keysColor, .keysSurface, .keysBackground, .keysFont, .keysTextSurface, .keysValue, .keysIcon: .navKeys
+			case .keysColor, .keysSurface, .keysBackground, .keysFont, .keysTextSurface, .keysNumber, .keysIcon: .navKeys
 				
 //			default: nil
 		}

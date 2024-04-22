@@ -83,7 +83,7 @@ struct FontKeyList: View {
 	FontKeyList()
 		.environment(\.theme, Theme(
 			icons: [:],
-			values: [:],
+			numbers: [:],
 			colors: [:],
 			fonts: [:]
 		))
