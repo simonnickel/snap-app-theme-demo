@@ -50,9 +50,9 @@ struct ThemeConfigSelectionView: View {
 						
 					}
 					.frame(
-						minWidth: theme.value(.themeConfigCardMinWidth, scaled: scaleFactor),
+						minWidth: theme.number(.themeConfigCardMinWidth, scaled: scaleFactor),
 						maxWidth: .infinity,
-						minHeight: theme.value(.themeConfigCardMinHeight, scaled: scaleFactor)
+						minHeight: theme.number(.themeConfigCardMinHeight, scaled: scaleFactor)
 					)
 				}
 			}

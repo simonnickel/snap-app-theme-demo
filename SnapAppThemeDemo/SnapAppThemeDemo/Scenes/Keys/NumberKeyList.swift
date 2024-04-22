@@ -47,7 +47,7 @@ struct NumberKeyList: View {
 					.theme(font: .listLabel)
 				
 				Group {
-					if let number = theme.value(key) {
+					if let number = theme.number(key) {
 						Text(String(format: "%.1f", number))
 					} else {
 						Text("nil")
