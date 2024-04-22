@@ -10,7 +10,7 @@
 		5A1EEB592BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB582BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift */; };
 		5A1EEB5D2BCD6D6D00422FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB5C2BCD6D6D00422FD8 /* Assets.xcassets */; };
 		5A1EEB612BCD6D6D00422FD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB602BCD6D6D00422FD8 /* Preview Assets.xcassets */; };
-		5A1EEB7C2BCD6E9B00422FD8 /* Dependencies+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB672BCD6E9B00422FD8 /* Dependencies+Environment.swift */; };
+		5A1EEB7C2BCD6E9B00422FD8 /* AppState+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB672BCD6E9B00422FD8 /* AppState+Environment.swift */; };
 		5A1EEB7D2BCD6E9B00422FD8 /* NavSidebarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB692BCD6E9B00422FD8 /* NavSidebarScreen.swift */; };
 		5A1EEB7E2BCD6E9B00422FD8 /* NavSplitScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6A2BCD6E9B00422FD8 /* NavSplitScene.swift */; };
 		5A1EEB7F2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6B2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift */; };
@@ -73,6 +73,7 @@
 		5A1EEBF52BCD6FDF00422FD8 /* SnapMatchingNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */; };
 		5A1EEBF82BCD6FFC00422FD8 /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF72BCD6FFC00422FD8 /* SnapCore */; };
 		5A1EEBFB2BCD700D00422FD8 /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */; };
+		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +82,7 @@
 		5A1EEB5C2BCD6D6D00422FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1EEB5E2BCD6D6D00422FD8 /* SnapAppThemeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapAppThemeDemo.entitlements; sourceTree = "<group>"; };
 		5A1EEB602BCD6D6D00422FD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5A1EEB672BCD6E9B00422FD8 /* Dependencies+Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dependencies+Environment.swift"; sourceTree = "<group>"; };
+		5A1EEB672BCD6E9B00422FD8 /* AppState+Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppState+Environment.swift"; sourceTree = "<group>"; };
 		5A1EEB692BCD6E9B00422FD8 /* NavSidebarScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavSidebarScreen.swift; sourceTree = "<group>"; };
 		5A1EEB6A2BCD6E9B00422FD8 /* NavSplitScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavSplitScene.swift; sourceTree = "<group>"; };
 		5A1EEB6B2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarButtonSettings.swift; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 		5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberKeys+App.swift"; sourceTree = "<group>"; };
 		5A1EEC172BCD740700422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5A1EEC192BCD740B00422FD8 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = TODO.md; path = ../TODO.md; sourceTree = "<group>"; };
+		5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Environment.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,14 +201,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5A1EEB682BCD6E9B00422FD8 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				5A1EEB672BCD6E9B00422FD8 /* Dependencies+Environment.swift */,
-			);
-			path = Environment;
-			sourceTree = "<group>";
-		};
 		5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,13 +224,13 @@
 		5A1EEB752BCD6E9B00422FD8 /* SnapAppTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				5A1EEB682BCD6E9B00422FD8 /* Environment */,
-				5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */,
-				5A1EEB702BCD6E9B00422FD8 /* TabScene */,
+				5A1EEB742BCD6E9B00422FD8 /* README.md */,
 				5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */,
 				5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */,
 				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
-				5A1EEB742BCD6E9B00422FD8 /* README.md */,
+				5A64102C2BD6F4E90023F0F0 /* Environment */,
+				5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */,
+				5A1EEB702BCD6E9B00422FD8 /* TabScene */,
 			);
 			path = SnapAppTemplate;
 			sourceTree = "<group>";
@@ -248,6 +242,7 @@
 				5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */,
 				5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */,
 				5A1EEB782BCD6E9B00422FD8 /* AppState.swift */,
+				5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */,
 				5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */,
 				5A1EEB7A2BCD6E9B00422FD8 /* NavItemDestinationWrapper.swift */,
 			);
@@ -374,6 +369,14 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		5A64102C2BD6F4E90023F0F0 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EEB672BCD6E9B00422FD8 /* AppState+Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -490,7 +493,8 @@
 				5A1EEBCF2BCD6EA100422FD8 /* IconKeyList.swift in Sources */,
 				5A1EEB7E2BCD6E9B00422FD8 /* NavSplitScene.swift in Sources */,
 				5A1EEBC32BCD6EA100422FD8 /* ExampleListRow.swift in Sources */,
-				5A1EEB7C2BCD6E9B00422FD8 /* Dependencies+Environment.swift in Sources */,
+				5A1EEB7C2BCD6E9B00422FD8 /* AppState+Environment.swift in Sources */,
+				5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */,
 				5A1EEBB72BCD6EA100422FD8 /* ThemeConfig+Colors.swift in Sources */,
 				5A1EEBD32BCD6EA100422FD8 /* ThemeKeyList.swift in Sources */,
 				5A1EEB872BCD6E9B00422FD8 /* AppContainer.swift in Sources */,
