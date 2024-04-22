@@ -16,7 +16,7 @@ extension ThemeConfig {
 	static let numbersAlternative = ThemeConfig(sectionID: "value", title: nil, text: "Other numbers", value: "Alternative", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
 			numbers: [
-				.buttonCornerRadius : 0.1
+				.buttonCornerRadius : .value(0.1)
 			]
 		)
 	})

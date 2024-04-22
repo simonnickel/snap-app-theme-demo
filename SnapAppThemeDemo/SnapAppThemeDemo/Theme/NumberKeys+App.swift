@@ -13,7 +13,7 @@ extension Theme.NumberKey {
 	
 	// MARK: - Base overrides
 	
-	static var definitionsApp: [Theme.NumberKey : Theme.NumberType] {[
+	static var definitionsApp: [Theme.NumberKey : Theme.NumberValue] {[
 		
 		:
 		
@@ -24,7 +24,7 @@ extension Theme.NumberKey {
 	
 	public static let allAppKeys: [Theme.NumberKey] = [.themeConfigCardMinWidth, .themeConfigCardMinHeight]
 	
-	public static let themeConfigCardMinWidth = Theme.NumberKey("themeConfigCardMinWidth", default: 150)
-	public static let themeConfigCardMinHeight = Theme.NumberKey("themeConfigCardMinHeight", default: 80)
+	public static let themeConfigCardMinWidth = Theme.NumberKey("themeConfigCardMinWidth", default: .value(150))
+	public static let themeConfigCardMinHeight = Theme.NumberKey("themeConfigCardMinHeight", default: .value(80))
 	
 }

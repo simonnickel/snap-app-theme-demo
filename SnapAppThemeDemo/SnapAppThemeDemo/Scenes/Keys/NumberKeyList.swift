@@ -71,7 +71,7 @@ struct NumberKeyList: View {
 		.environment(\.theme, Theme(
 			icons: [:],
 			numbers: [
-				.spacingSections : 10,
+				.spacingSections : .value(10),
 			],
 			colors: [:],
 			fonts: [:]
