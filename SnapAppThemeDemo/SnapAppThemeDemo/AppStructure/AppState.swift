@@ -13,7 +13,7 @@ struct AppState {
 	
 	var themeConfigs: [ThemeConfig] = [
 		ThemeConfig.colorsBase,
-		ThemeConfig.backgroundsBase,
+		ThemeConfig.backgroundsInteractiveGradient,
 		ThemeConfig.fontsBase,
 		ThemeConfig.fontFamilyBase,
 		ThemeConfig.fontDesignBase,

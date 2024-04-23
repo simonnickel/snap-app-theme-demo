@@ -53,19 +53,33 @@ extension ThemeConfig {
 			surfaces: [
 				.accentForeground : .color(.accentPrimary),
 				.accentBackground : .color(.accentPrimary),
-				.interactiveForeground : .key(.accentGradientForeground),
-				.interactiveBackground : .key(.accentGradientBackground),
+				.accentForegroundNavigation : .key(.accentForeground),
+				.accentForegroundInteractive : .key(.accentGradientForeground),
+				.accentBackgroundInteractive : .key(.accentGradientBackground),
 			]
 		)
 	})
 	
-	static let backgroundsAccentGradient = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "All Accent", icon: nil, apply: { theme in
+	static let backgroundsInteractiveAndNavGradient = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "Inter + Nav", icon: nil, apply: { theme in
+		return theme.replacingDefinitions(
+			surfaces: [
+				.accentForeground : .color(.accentPrimary),
+				.accentBackground : .color(.accentPrimary),
+				.accentForegroundNavigation : .key(.accentGradientForeground),
+				.accentForegroundInteractive : .key(.accentGradientForeground),
+				.accentBackgroundInteractive : .key(.accentGradientBackground),
+			]
+		)
+	})
+	
+	static let backgroundsAllGradient = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "All Accent", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
 			surfaces: [
 				.accentForeground : .key(.accentGradientBackground),
 				.accentBackground : .key(.accentGradientBackground),
-				.interactiveForeground : .key(.accentGradientForeground),
-				.interactiveBackground : .key(.accentGradientBackground),
+				.accentForegroundNavigation : .key(.accentGradientForeground),
+				.accentForegroundInteractive : .key(.accentGradientForeground),
+				.accentBackgroundInteractive : .key(.accentGradientBackground),
 			]
 		)
 	})

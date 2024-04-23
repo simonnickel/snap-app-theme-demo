@@ -213,10 +213,10 @@ struct ExampleColorsScreen : View {
 			.replaceAccent(base: .yellow)
 			.replacingDefinitions(
 				surfaces: [
-					//				.accentForeground : .key(.accentGradientBackground),
-					//				.accentBackground : .key(.accentGradientBackground),
-					.interactiveForeground : .key(.accentGradientForeground),
-					.interactiveBackground : .key(.accentGradientBackground),
+//									.accentForeground : .key(.accentGradientBackground),
+//									.accentBackground : .key(.accentGradientBackground),
+					.accentForegroundInteractive : .key(.accentGradientForeground),
+					.accentBackgroundInteractive : .key(.accentGradientBackground),
 				]
 			))
 	
