@@ -11,52 +11,53 @@ import SnapTheme
 struct ExampleTextView: View {
 	
 	var body: some View {
-		ThemeVStack(alignment: .leading, spacing: .spacingGroups) {
-			ThemeVStack(alignment: .leading, spacing: .spacingTextHeader) {
-				ThemeVStack(alignment: .leading) {
-					Text("Scene Header")
-						.theme(text: .sceneHeader)
-					Text("Scene Header Subtitle")
-						.theme(text: .sceneHeaderSubtitle)
-				}
+		ThemeVStack(alignment: .leading) {
+			ThemeVStack(alignment: .leading) {
+				Text("Scene Header")
+					.theme(text: .sceneHeader)
+				Text("Scene Header Subtitle")
+					.theme(text: .sceneHeaderSubtitle)
+			}
+			.theme(padding: .spacingTextHeader, .bottom)
+			
+			Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
+				.fixedSize(horizontal: false, vertical: true)
+				.theme(text: .textBlock)
+				.theme(padding: .spacingSections, .bottom)
+			
+			Text("Scene Section Header")
+				.theme(text: .sceneSectionHeader)
+				.theme(padding: .spacingTextHeader, .bottom)
+			
+			Text("Text Title")
+				.theme(text: .textTitle)
+				.theme(padding: .spacingTextTitle, .bottom)
+			
+			ThemeVStack(alignment: .leading, spacing: .spacingElements) {
+				Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
+					.fixedSize(horizontal: false, vertical: true)
+					.theme(text: .textBlock)
 				Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
 					.fixedSize(horizontal: false, vertical: true)
 					.theme(text: .textBlock)
 			}
+			.theme(padding: .spacingGroups, .bottom)
 			
-			ThemeVStack(alignment: .leading, spacing: .spacingTextHeader) {
-				Text("Scene Section Header")
-					.theme(text: .sceneSectionHeader)
-				ThemeVStack(alignment: .leading, spacing: .spacingTextTitle) {
-					Text("Text Title")
-						.theme(text: .textTitle)
-					ThemeVStack(alignment: .leading, spacing: .spacingElements) {
-						Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
-							.fixedSize(horizontal: false, vertical: true)
-							.theme(text: .textBlock)
-						Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
-							.fixedSize(horizontal: false, vertical: true)
-							.theme(text: .textBlock)
-					}
-				}
-			}
+			Text("Title of a text block")
+				.theme(text: .textTitle)
+				.theme(padding: .spacingTextTitle, .bottom)
 			
-			ThemeVStack(alignment: .leading, spacing: .spacingTextTitle) {
-				Text("Title of a text block")
-					.theme(text: .textTitle)
-				
-				ThemeVStack(alignment: .leading, spacing: .spacingElements) {
-					Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
-						.fixedSize(horizontal: false, vertical: true)
-						.theme(text: .textBlock)
-					Text("Text Footnote")
-						.theme(text: .textFootnote)
-					HStack {
-						ThemeLabel(text: "Text Tag", icon: .favorite)
-							.labelStyle(.themeTag())
-						ThemeLabel(text: "Text Tag")
-							.labelStyle(.themeTag())
-					}
+			ThemeVStack(alignment: .leading, spacing: .spacingElements) {
+				Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
+					.fixedSize(horizontal: false, vertical: true)
+					.theme(text: .textBlock)
+				Text("Text Footnote")
+					.theme(text: .textFootnote)
+				HStack {
+					ThemeLabel(text: "Text Tag", icon: .favorite)
+						.labelStyle(.themeTag())
+					ThemeLabel(text: "Text Tag")
+						.labelStyle(.themeTag())
 				}
 			}
 			
