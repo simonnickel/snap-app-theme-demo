@@ -108,9 +108,11 @@ struct ExampleColorsScreen : View {
 					}
 					
 					ThemeHStack(spacing: .spacingElements) {
-						Text(".accentColors.accent")
+						Text(".accentColors.base")
 							.theme(font: .listHeader)
-							.theme(color: .accentColor)
+							.if(unwrap: accentColors?.base, transform: { view, base in
+								view.theme(color: base)
+							})
 						Text(".accentColors.complimentary")
 							.theme(font: .listHeader)
 							.if(unwrap: accentColors?.complimentary, transform: { view, complimentary in

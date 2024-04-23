@@ -135,7 +135,7 @@ struct LabelStyleModel: Identifiable, Hashable, Equatable, Sendable {
 		apiExtension: ".themeTag(color:background:)",
 		style: ThemeLabelStyleTag(),
 		styleOptions: [
-			.init(name: "color: .accentColor, background:default", style: .themeTag(color: .accentColor)),
+			.init(name: "color: .accentPrimary, background: default", style: .themeTag(color: .accentPrimary)),
 			.init(name: "selected", style: .themeTag(selected: true)),
 		]
 	)

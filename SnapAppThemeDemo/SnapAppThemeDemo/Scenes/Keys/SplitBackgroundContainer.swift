@@ -17,7 +17,7 @@ internal struct SplitBackgroundContainer<Content: View>: View {
 	
 	var body: some View {
 		
-		let color1 = theme.color(for: .background, in: environment)
+		let color1 = theme.color(for: .backgroundScene, in: environment)
 		let color2 = theme.color(for: .backgroundContent, in: environment)
 		
 		ZStack {

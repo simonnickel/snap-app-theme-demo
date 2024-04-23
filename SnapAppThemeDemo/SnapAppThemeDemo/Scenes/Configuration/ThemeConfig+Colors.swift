@@ -24,7 +24,7 @@ extension ThemeConfig {
 		)
 	})
 	static let colorsIndicatorDict: [Theme.ColorKey : Theme.ColorValue] = [
-		.background : .color(.yellow),
+		.backgroundScene : .color(.yellow),
 		.backgroundContent : .color(.orange),
 		.backgroundContentSecondary : .color(.yellow),
 		
@@ -51,8 +51,8 @@ extension ThemeConfig {
 	static let backgroundsInteractiveGradient = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "Interactive", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
 			surfaces: [
-				.accentForeground : .color(.accentColor),
-				.accentBackground : .color(.accentColor),
+				.accentForeground : .color(.accentPrimary),
+				.accentBackground : .color(.accentPrimary),
 				.interactiveForeground : .key(.accentGradientForeground),
 				.interactiveBackground : .key(.accentGradientBackground),
 			]
