@@ -31,11 +31,10 @@ struct ExampleTextScreen: View {
 				
 				ExampleCardView()
 				
-				ThemeCornerView(model: .init(icon: .favorite, title: "Card Title", text: "Card Text", value: "123", isSelected: true))
+				ThemeCornerView(model: .init(icon: .favorite, title: "Card Title", text: "Card Subtitle", value: "123", isSelected: true))
 					.themeCard(.accent)
 				
 			}
-			
 			
 			ThemeSectionHeaderContainer(inset: .cardPadding) {
 				ThemeLabel(text: "List")
@@ -61,7 +60,7 @@ struct ExampleTextScreen: View {
 	
 	ExampleTextScreen()
 		.environment(\.theme, .baseApp.replacingDefinitions(
-			fonts: ThemeConfig.fontsIndicatorDict
+//			fonts: ThemeConfig.fontsIndicatorDict
 		))
 	
 }

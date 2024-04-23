@@ -14,27 +14,30 @@ struct ExampleCardView: View {
 	
 	var body: some View {
 		
-		HStack {
-			ThemeVStack(alignment: .leading, spacing: .spacingGroups) {
-				Label(
-					title: {
-						Text("Value").theme(text: .cardValue)
-					},
-					icon: { theme.icon(.favorite).image.theme(font: .cardIcon) }
-				)
-				ThemeVStack(alignment: .leading, spacing: .spacingElements) {
-					Text("Title").theme(text: .cardTitle)
-					Text("Subtitle").theme(text: .cardSubtitle)
-					Text("Label").theme(text: .cardLabel)
-					Text("Text Block").theme(text: .cardBlock)
-					Text("Footnote").theme(text: .cardFootnote)
-				}
-			}
-			.frame(maxWidth: .infinity, alignment: .leading)
+		ThemeHStack(spacing: .spacingGroups) {
 			Label(
 				title: { },
 				icon: { theme.icon(.cardIndicatorEnabled).image.theme(font: .cardIndicator) }
 			).labelStyle(.iconOnly)
+
+			ThemeVStack(alignment: .leading, spacing: .spacingGroups) {
+				ThemeVStack(alignment: .leading) {
+					Text("Card Title").theme(text: .cardTitle)
+					Text("Card Subtitle").theme(text: .cardSubtitle)
+				}
+				Label(
+					title: {
+						Text("Card Value").theme(text: .cardValue)
+					},
+					icon: { theme.icon(.favorite).image.theme(font: .cardIcon) }
+				)
+				ThemeVStack(alignment: .leading, spacing: .spacingElements) {
+					Text("Card Label").theme(text: .cardLabel)
+					Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .cardBlock").theme(text: .cardBlock)
+					Text("Card Footnote").theme(text: .cardFootnote)
+				}
+			}
+			.frame(maxWidth: .infinity, alignment: .leading)
 		}
 		.frame(maxWidth: .infinity)
 		.themeCard(.content)
