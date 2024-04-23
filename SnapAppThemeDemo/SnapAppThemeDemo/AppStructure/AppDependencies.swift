@@ -10,12 +10,19 @@ import Observation
 import SnapTemplateShared
 
 /// Definition and application of dependenies to use in the app.
+@MainActor
 @Observable class AppDependencies {
 	
 	private let templateDependencies: TemplateDependencies
 	private var appState: AppState
 	
 	init(templateDependencies: TemplateDependencies, appState: AppState = AppState()) {
+		
+		var theme = templateDependencies.templateState.theme
+		for config in appState.themeConfigs {
+			theme = config.apply(theme)
+		}
+		templateDependencies.templateState.theme = theme
 		
 		self.templateDependencies = templateDependencies
 		self.appState = appState
