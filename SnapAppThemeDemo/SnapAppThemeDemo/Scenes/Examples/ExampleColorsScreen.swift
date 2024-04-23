@@ -43,25 +43,25 @@ struct ExampleColorsScreen : View {
 				ThemeVStack(alignment: .leading, spacing: .cardPadding) {
 					
 					Text((isContent ? ".content\(isHighlighted ? ", highlighted" : "")" : ".scene" ) + " (tap to switch)")
-						.theme(font: .labelTag)
+						.theme(font: .textLabel)
 					
 					ThemeCard(style: .contentSecondary, level: .first) {
 						Text(".contentSecondary")
-							.theme(text: .labelTag)
+							.theme(text: .textLabel)
 							.frame(maxWidth: .infinity, alignment: .leading)
 					}
 					
 					ThemeHStack(spacing: .cardPadding) {
 						ThemeCard(style: .accent, level: .first) {
 							Text(".accent")
-								.theme(font: .labelTag)
+								.theme(font: .textLabel)
 								.theme(color: .foregroundOnBackground)
 								.frame(maxWidth: .infinity, alignment: .leading)
 						}
 						
 						ThemeCard(style: .accent, level: .first, highlighted: true) {
 							Text(".accent, highlighted")
-								.theme(font: .labelTag)
+								.theme(font: .textLabel)
 								.theme(color: .foregroundOnBackground)
 								.frame(maxWidth: .infinity, alignment: .leading)
 						}

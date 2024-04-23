@@ -16,23 +16,34 @@ struct ExampleTextScreen: View {
 			
 			ThemeSectionHeaderContainer(top: nil, inset: .cardPadding) {
 				ThemeLabel(text: "Label Style Section Header")
+					.labelStyle(.themeSectionHeader(prominent: true))
+			}
+			
+			ExampleTextView()
+				.themeCard(.content)
+				
+			ThemeSectionHeaderContainer(inset: .cardPadding) {
+				ThemeLabel(text: "Card")
 					.labelStyle(.themeSectionHeader(textCase: .uppercase, prominent: false))
 			}
 			
 			ThemeVStack(spacing: .spacingGroups) {
-				ExampleTextView()
-					.themeCard(.content)
 				
 				ExampleCardView()
+				
+				ThemeCornerView(model: .init(icon: .favorite, title: "Card Title", text: "Card Text", value: "123", isSelected: true))
+					.themeCard(.accent)
+				
 			}
+			
 			
 			ThemeSectionHeaderContainer(inset: .cardPadding) {
-				ThemeLabel(text: "Prominent Header")
-					.labelStyle(.themeSectionHeader(prominent: true))
+				ThemeLabel(text: "List")
+					.labelStyle(.themeSectionHeader(textCase: .uppercase, prominent: false))
 			}
-			
-			ThemeCornerView(model: .init(icon: .favorite, title: "Card Title", text: "Card Text", value: "123", isSelected: true))
-				.themeCard(.accent)
+
+			ExampleListRow(item: .exampleFull)
+				.themeCard(.content)
 			
 		}
 		.navigationDestination(for: String.self) { value in

@@ -65,7 +65,6 @@ extension ThemeConfig {
 		.sidebarTitle : fontsIndicatorDefinition,
 		.sidebarLabel : fontsIndicatorDefinition,
 		
-		.labelTag : fontsIndicatorDefinition,
 		.labelButtonPrimary : fontsIndicatorDefinition,
 		.labelButtonSecondary : fontsIndicatorDefinition,
 

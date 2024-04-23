@@ -43,22 +43,33 @@ struct ExampleTextView: View {
 			}
 			.theme(padding: .spacingGroups, .bottom)
 			
-			Text("Title of a text block")
-				.theme(text: .textTitle)
-				.theme(padding: .spacingTextTitle, .bottom)
+			ThemeVStack(alignment: .leading) {
+				Text("Title of a text block")
+					.theme(text: .textTitle)
+				Text("Text Subtitle")
+					.theme(text: .textSubtitle)
+			}
+			.theme(padding: .spacingTextTitle, .bottom)
 			
 			ThemeVStack(alignment: .leading, spacing: .spacingElements) {
 				Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
 					.fixedSize(horizontal: false, vertical: true)
 					.theme(text: .textBlock)
-				Text("Text Footnote")
-					.theme(text: .textFootnote)
-				HStack {
-					ThemeLabel(text: "Text Tag", icon: .favorite)
+				ThemeHStack(spacing: .spacingElements) {
+					ThemeLabel(text: "Text Label", icon: .favorite)
 						.labelStyle(.themeTag())
-					ThemeLabel(text: "Text Tag")
+					ThemeLabel(text: "Label Style Tag")
 						.labelStyle(.themeTag())
 				}
+				ThemeHStack(spacing: .spacingElements) {
+
+					Text("Text Icon")
+						.theme(text: .textIcon)
+					Text("Text Value")
+						.theme(text: .textValue)
+				}
+				Text("Text Footnote")
+					.theme(text: .textFootnote)
 			}
 			.theme(padding: .spacingSections, .bottom)
 			
