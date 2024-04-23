@@ -12,20 +12,22 @@ struct ExampleTextView: View {
 	
 	var body: some View {
 		ThemeVStack(alignment: .leading, spacing: .spacingGroups) {
-			ThemeVStack(alignment: .leading, spacing: .textSpacingTitle) {
-				Text("Scene Header")
-					.theme(text: .sceneHeader)
-				Text("Scene Subtitle")
-					.theme(text: .sceneHeaderSubtitle)
+			ThemeVStack(alignment: .leading, spacing: .spacingTextHeader) {
+				ThemeVStack(alignment: .leading) {
+					Text("Scene Header")
+						.theme(text: .sceneHeader)
+					Text("Scene Header Subtitle")
+						.theme(text: .sceneHeaderSubtitle)
+				}
 				Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
 					.fixedSize(horizontal: false, vertical: true)
 					.theme(text: .textBlock)
 			}
 			
-			ThemeVStack(alignment: .leading, spacing: .textSpacingHeader) {
+			ThemeVStack(alignment: .leading, spacing: .spacingTextHeader) {
 				Text("Scene Section Header")
 					.theme(text: .sceneSectionHeader)
-				ThemeVStack(alignment: .leading, spacing: .textSpacingTitle) {
+				ThemeVStack(alignment: .leading, spacing: .spacingTextTitle) {
 					Text("Text Title")
 						.theme(text: .textTitle)
 					ThemeVStack(alignment: .leading, spacing: .spacingElements) {
@@ -39,7 +41,7 @@ struct ExampleTextView: View {
 				}
 			}
 			
-			ThemeVStack(alignment: .leading, spacing: .textSpacingTitle) {
+			ThemeVStack(alignment: .leading, spacing: .spacingTextTitle) {
 				Text("Title of a text block")
 					.theme(text: .textTitle)
 				
