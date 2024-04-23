@@ -60,8 +60,6 @@ extension ThemeConfig {
 		.listValue : fontsIndicatorDefinition,
 		.listFootnote : fontsIndicatorDefinition,
 		
-		.listNavText : fontsIndicatorDefinition,
-		
 		.sidebarTitle : fontsIndicatorDefinition,
 		.sidebarLabel : fontsIndicatorDefinition,
 		
