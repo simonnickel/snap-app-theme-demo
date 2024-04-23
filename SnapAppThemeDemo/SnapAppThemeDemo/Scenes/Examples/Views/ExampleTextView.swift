@@ -60,6 +60,7 @@ struct ExampleTextView: View {
 						.labelStyle(.themeTag())
 				}
 			}
+			.theme(padding: .spacingSections, .bottom)
 			
 			HStack {
 				VStack {
