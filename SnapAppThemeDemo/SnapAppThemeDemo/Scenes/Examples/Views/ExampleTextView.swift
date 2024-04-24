@@ -33,7 +33,7 @@ struct ExampleTextView: View {
 				.theme(text: .textTitle)
 				.theme(padding: .spacingTextTitle, .bottom)
 			
-			ThemeVStack(alignment: .leading, spacing: .spacingElements) {
+			ThemeVStack(alignment: .leading, spacing: .spacingTextBlock) {
 				Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
 					.fixedSize(horizontal: false, vertical: true)
 					.theme(text: .textBlock)
@@ -51,7 +51,7 @@ struct ExampleTextView: View {
 			}
 			.theme(padding: .spacingTextTitle, .bottom)
 			
-			ThemeVStack(alignment: .leading, spacing: .spacingElements) {
+			ThemeVStack(alignment: .leading, spacing: .spacingTextBlock) {
 				Text("Font for longer text blocks. Usually consisting of multiple sentences and spanning more than a single line. Sometimes even more to have an actual block. Using key: .textBlock")
 					.fixedSize(horizontal: false, vertical: true)
 					.theme(text: .textBlock)
