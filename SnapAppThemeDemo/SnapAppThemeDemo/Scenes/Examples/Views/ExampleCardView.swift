@@ -50,7 +50,7 @@ struct ExampleCardView: View {
 
 #Preview {
 	
-	ThemePreviewContainer(.scene) {
+	ThemePreviewContainer(.screen) {
 		ExampleCardView()
 	}
 	

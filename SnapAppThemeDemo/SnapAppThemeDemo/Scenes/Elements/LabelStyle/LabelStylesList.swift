@@ -12,7 +12,7 @@ struct LabelStylesList: View {
 	
 	var body: some View {
 		
-		ThemeSceneList {
+		ThemeScreenList {
 			
 			ForEach(LabelStyleModel.all) { model in
 				ListRow(model: model)

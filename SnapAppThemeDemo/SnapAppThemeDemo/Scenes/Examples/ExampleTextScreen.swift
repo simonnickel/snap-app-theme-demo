@@ -12,7 +12,7 @@ struct ExampleTextScreen: View {
 	
 	var body: some View {
 		
-		ThemeScene {
+		ThemeScreen {
 			
 			ThemeSectionHeaderContainer(top: nil, inset: .cardPadding) {
 				ThemeLabel(text: "Label Style Section Header")

@@ -15,7 +15,7 @@ struct LabelStyleExampleScreen: View {
 	
 	var body: some View {
 		
-		ThemeScene(title: model.name) {
+		ThemeScreen(title: model.name) {
 			
 			ThemeVStack(alignment: .leading, spacing: .spacingGroups) {
 				

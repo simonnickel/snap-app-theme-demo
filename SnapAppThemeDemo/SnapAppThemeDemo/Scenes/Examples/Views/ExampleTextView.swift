@@ -14,9 +14,9 @@ struct ExampleTextView: View {
 		ThemeVStack(alignment: .leading) {
 			ThemeVStack(alignment: .leading) {
 				Text("Scene Header")
-					.theme(text: .sceneHeader)
+					.theme(text: .screenHeader)
 				Text("Scene Header Subtitle")
-					.theme(text: .sceneHeaderSubtitle)
+					.theme(text: .screenHeaderSubtitle)
 			}
 			.theme(padding: .spacingTextHeader, .bottom)
 			
@@ -26,7 +26,7 @@ struct ExampleTextView: View {
 				.theme(padding: .spacingSections, .bottom)
 			
 			Text("Scene Section Header")
-				.theme(text: .sceneSectionHeader)
+				.theme(text: .screenSectionHeader)
 				.theme(padding: .spacingTextHeader, .bottom)
 			
 			Text("Text Title")

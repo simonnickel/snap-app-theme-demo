@@ -17,7 +17,7 @@ struct ExampleColorsScreen : View {
 	
 	var body: some View {
 		
-		ThemeScene {
+		ThemeScreen {
 			
 			viewBackground
 			viewText

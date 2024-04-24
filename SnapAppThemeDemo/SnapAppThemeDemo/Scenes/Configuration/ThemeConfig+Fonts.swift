@@ -26,9 +26,9 @@ extension ThemeConfig {
 	
 	static let fontsIndicatorDefinition = Theme.FontValue.definition(Theme.FontDefinition(size: 14, design: .monospaced, weight: .black))
 	static let fontsIndicatorDict: [Theme.FontKey : Theme.FontValue] = [
-		.sceneHeader : fontsIndicatorDefinition,
-		.sceneHeaderSubtitle : fontsIndicatorDefinition,
-		.sceneSectionHeader : fontsIndicatorDefinition,
+		.screenHeader : fontsIndicatorDefinition,
+		.screenHeaderSubtitle : fontsIndicatorDefinition,
+		.screenSectionHeader : fontsIndicatorDefinition,
 		
 		.textTitle : fontsIndicatorDefinition,
 		.textSubtitle : fontsIndicatorDefinition,

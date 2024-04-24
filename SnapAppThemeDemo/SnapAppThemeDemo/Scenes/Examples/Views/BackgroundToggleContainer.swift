@@ -27,9 +27,9 @@ struct BackgroundToggleContainer<Content: View>: View {
 			switch (background, highlighted) {
 				case (.content, false): highlighted = true
 				case (.content, true): 
-					background = .scene
+					background = .screen
 					highlighted = false
-				case (.scene, _): background = .content
+				case (.screen, _): background = .content
 				default: break
 			}
 		}

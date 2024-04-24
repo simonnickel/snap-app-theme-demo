@@ -13,7 +13,7 @@ struct ThemeConfigScene: View {
 	
 	var body: some View {
 		// It's not a List to prevent sticky headers.
-		ThemeScene {
+		ThemeScreen {
 			LazyVStack {
 				
 				ConfigSection(title: "Colors", configSectionID: "color") {

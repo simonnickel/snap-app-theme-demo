@@ -19,7 +19,7 @@ struct ExampleListScene: View {
 	private let loopItem = ExampleListLoop.ListItem(title: "List Navigation Loop")
 	
 	var body: some View {AnyView( // Style.listStyle has to return any ListStyle.
-		ThemeSceneList(
+		ThemeScreenList(
 			title: selectedStyle.rawValue,
 			listStyle: selectedStyle
 		) {

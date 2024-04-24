@@ -24,7 +24,7 @@ extension ThemeConfig {
 		)
 	})
 	static let colorsIndicatorDict: [Theme.ColorKey : Theme.ColorValue] = [
-		.backgroundScene : .color(.yellow),
+		.backgroundScreen : .color(.yellow),
 		.backgroundContent : .color(.orange),
 		.backgroundContentSecondary : .color(.yellow),
 		
