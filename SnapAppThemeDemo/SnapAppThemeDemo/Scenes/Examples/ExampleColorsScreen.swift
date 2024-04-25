@@ -45,7 +45,7 @@ struct ExampleColorsScreen : View {
 					Text((isContent ? ".content\(isHighlighted ? ", highlighted" : "")" : ".scene" ) + " (tap to switch)")
 						.theme(font: .textLabel)
 					
-					ThemeCard(style: .contentSecondary, level: .first) {
+					ThemeCard(level: .first) {
 						Text(".contentSecondary")
 							.theme(text: .textLabel)
 							.frame(maxWidth: .infinity, alignment: .leading)
