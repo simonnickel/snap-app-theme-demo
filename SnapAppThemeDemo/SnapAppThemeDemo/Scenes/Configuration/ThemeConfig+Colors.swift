@@ -24,16 +24,13 @@ extension ThemeConfig {
 		)
 	})
 	static let colorsIndicatorDict: [Theme.ColorKey : Theme.ColorValue] = [
-		.backgroundScreen : .color(.yellow),
-		.backgroundContent : .color(.orange),
-		.backgroundContentSecondary : .color(.yellow),
-		
 		.foreground : .color(.green),
 		.foregroundSecondary : .color(.teal),
 		.foregroundOnBackground : .color(.yellow),
 		.foregroundDisabled : .color(.brown),
-		
+
 		.accentColorBase : .color(.purple),
+		.destructive : .color(.pink),
 		
 		.exampleColor : .color(.brown),
 	]
@@ -41,14 +38,14 @@ extension ThemeConfig {
 	
 	// MARK: Surfaces
 	
-	static let backgroundsBase = ThemeConfig(sectionID: "color", title: nil, text: "", value: "No Gradients", icon: nil, apply: { theme in
+	static let gradientsBase = ThemeConfig(sectionID: "color", title: nil, text: "", value: "No Gradients", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
 			surfaces: [:],
 			backgrounds: [:]
 		)
 	})
 	
-	static let backgroundsInteractiveGradient = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "Interactive", icon: nil, apply: { theme in
+	static let gradientsInteractive = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "Interactive", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
 			surfaces: [
 				.accentForeground : .color(.accentPrimary),
@@ -60,7 +57,7 @@ extension ThemeConfig {
 		)
 	})
 	
-	static let backgroundsInteractiveAndNavGradient = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "Inter + Nav", icon: nil, apply: { theme in
+	static let gradientsInteractiveAndNav = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "Inter + Nav", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
 			surfaces: [
 				.accentForeground : .color(.accentPrimary),
@@ -72,7 +69,7 @@ extension ThemeConfig {
 		)
 	})
 	
-	static let backgroundsAllGradient = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "All Accent", icon: nil, apply: { theme in
+	static let gradientsAll = ThemeConfig(sectionID: "color", title: nil, text: nil, value: "All Accent", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
 			surfaces: [
 				.accentForeground : .key(.accentGradientBackground),

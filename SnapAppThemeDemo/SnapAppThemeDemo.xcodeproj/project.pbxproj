@@ -74,6 +74,7 @@
 		5A1EEBF82BCD6FFC00422FD8 /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF72BCD6FFC00422FD8 /* SnapCore */; };
 		5A1EEBFB2BCD700D00422FD8 /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */; };
 		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
+		5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +144,7 @@
 		5A1EEC172BCD740700422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5A1EEC192BCD740B00422FD8 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = TODO.md; path = ../TODO.md; sourceTree = "<group>"; };
 		5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Environment.swift"; sourceTree = "<group>"; };
+		5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Backgrounds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB8C2BCD6EA100422FD8 /* ThemeConfig.swift */,
+				5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */,
 				5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */,
 				5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */,
 				5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */,
@@ -477,6 +480,7 @@
 				5A1EEBC72BCD6EA100422FD8 /* BackgroundToggleContainer.swift in Sources */,
 				5A1EEBD62BCD6EA100422FD8 /* SettingsScene.swift in Sources */,
 				5A1EEBBC2BCD6EA100422FD8 /* ThemeConfigScene.swift in Sources */,
+				5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */,
 				5A1EEBBA2BCD6EA100422FD8 /* ThemeConfig+TextColors.swift in Sources */,
 				5A1EEBC52BCD6EA100422FD8 /* ExampleListScene.swift in Sources */,
 				5A1EEBD42BCD6EA100422FD8 /* NumberKeyList.swift in Sources */,

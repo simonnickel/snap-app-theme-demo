@@ -12,8 +12,9 @@ import SnapTheme
 struct AppState {
 	
 	var themeConfigs: [ThemeConfig] = [
+		ThemeConfig.backgroundsBase,
 		ThemeConfig.colorsBase,
-		ThemeConfig.backgroundsInteractiveGradient,
+		ThemeConfig.gradientsInteractive,
 		ThemeConfig.fontsBase,
 		ThemeConfig.fontFamilyBase,
 		ThemeConfig.fontDesignBase,

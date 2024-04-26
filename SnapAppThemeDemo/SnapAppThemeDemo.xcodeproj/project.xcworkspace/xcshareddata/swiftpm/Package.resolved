@@ -7,7 +7,7 @@
       "location" : "https://github.com/simonnickel/snap-core",
       "state" : {
         "branch" : "main",
-        "revision" : "3f494f48f14e8ed06f89b75b96f47f061c3273fd"
+        "revision" : "5d717da38e2267a1afbdcf589ab574e19c0a7f82"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/simonnickel/snap-theme",
       "state" : {
         "branch" : "main",
-        "revision" : "ea723c983b7d044b07300a12a893832c052556ac"
+        "revision" : "b016a5306d8bebbd731f8e4c1b047a9b87cb4cf4"
       }
     }
   ],

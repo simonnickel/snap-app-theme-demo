@@ -18,7 +18,10 @@ struct ThemeConfigScene: View {
 				
 				ConfigSection(title: "Colors", configSectionID: "color") {
 					ThemeConfigSelectionView(options: [.colorsBase, .colorsIndicator])
-					ThemeConfigSelectionView(options: [.backgroundsBase, .backgroundsInteractiveGradient, .backgroundsInteractiveAndNavGradient, .backgroundsAllGradient])
+					ThemeConfigSelectionView(options: [.gradientsBase, .gradientsInteractive, .gradientsInteractiveAndNav, .gradientsAll])
+				}
+				ConfigSection(title: "Background", configSectionID: "background") {
+					ThemeConfigSelectionView(options: [.backgroundsBase, .backgroundsIndicator])
 				}
 				ConfigSection(title: "Fonts", configSectionID: "font") {
 					ThemeConfigSelectionView(options: [.fontsBase, .fontsIndicator])
