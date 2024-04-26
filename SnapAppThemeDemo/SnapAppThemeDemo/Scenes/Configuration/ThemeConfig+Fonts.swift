@@ -88,7 +88,7 @@ extension ThemeConfig {
 	
 	static let fontDesignBase = ThemeConfig(sectionID: "font", title: nil, text: nil, value: ".default", icon: nil, apply: { theme in
 		return theme.replacingDefinitions(
-			fontDesignDefault: Theme.base.fontDesignDefault
+			fontDesignDefault: .default
 		)
 	})
 	

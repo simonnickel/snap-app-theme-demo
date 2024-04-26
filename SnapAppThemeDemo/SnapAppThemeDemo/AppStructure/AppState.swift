@@ -17,7 +17,7 @@ struct AppState {
 		ThemeConfig.gradientsInteractive,
 		ThemeConfig.fontsBase,
 		ThemeConfig.fontFamilyBase,
-		ThemeConfig.fontDesignBase,
+		ThemeConfig.fontDesignRound,
 		ThemeConfig.textSurfacesBase,
 		ThemeConfig.iconsBase,
 		ThemeConfig.numbersBase,
