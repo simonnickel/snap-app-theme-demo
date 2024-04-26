@@ -18,12 +18,6 @@ import SnapTemplateShared
 	
 	init(templateDependencies: TemplateDependencies, appState: AppState = AppState()) {
 		
-		var theme = templateDependencies.templateState.theme
-		for config in appState.themeConfigs {
-			theme = config.apply(theme)
-		}
-		templateDependencies.templateState.theme = theme
-		
 		self.templateDependencies = templateDependencies
 		self.appState = appState
 		
@@ -34,8 +28,14 @@ import SnapTemplateShared
 	
 	/// Apply dependencies defined in project. See `TemplateDependencies` for template defined dependencies.
 	func apply<Content: View>(on content: Content) -> some View {
+
+		var theme = templateDependencies.templateState.theme
+		for config in appState.themeConfigs {
+			theme = config.apply(theme)
+		}
 		
 		return content
+			.environment(\.theme, theme)
 			.environment(\.appState, appState)
 			.environment(\.appStateBinding, Binding(get: {
 				self.appState
