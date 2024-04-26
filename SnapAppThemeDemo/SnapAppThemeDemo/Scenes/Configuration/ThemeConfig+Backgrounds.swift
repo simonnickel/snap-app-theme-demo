@@ -25,7 +25,7 @@ extension ThemeConfig {
 	})
 	static let backgroundsIndicatorDict: [Theme.BackgroundKey : Theme.BackgroundValue] = [
 		.screen : .surface(.color(.systemYellow)),
-		.content : .surface(.color(.systemOrange)),
+		.content : .surface(.color(.systemOrange), highlight: .overlayHighlightPush),
 		.contentSecondary : .surface(.color(.systemYellow)),
 		.bar : .surface(.color(.systemPink)),
 		.sidebar : .key(.bar),
