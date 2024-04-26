@@ -29,6 +29,7 @@ import SnapTemplateShared
 	/// Apply dependencies defined in project. See `TemplateDependencies` for template defined dependencies.
 	func apply<Content: View>(on content: Content) -> some View {
 
+		// Apply Theme Config
 		var theme = templateDependencies.templateState.theme
 		for config in appState.themeConfigs {
 			theme = config.apply(theme)
