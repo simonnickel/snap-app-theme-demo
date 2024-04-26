@@ -32,11 +32,15 @@ import SnapTemplateShared
 		// Apply Theme Config
 		var theme = templateDependencies.templateState.theme
 		for config in appState.themeConfigs {
-			theme = config.apply(theme)
+			if config == ThemeConfig.colorsBase {
+				// Do not apply base color config, would override accent color from settings.
+			} else {			
+				theme = config.apply(theme)
+			}
 		}
 		
 		return content
-			.environment(\.theme, theme)
+			.theme(apply: theme) // Already applied in TemplateDependencies, but has to applied again because of config changes.
 			.environment(\.appState, appState)
 			.environment(\.appStateBinding, Binding(get: {
 				self.appState
