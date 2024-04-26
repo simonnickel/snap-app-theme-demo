@@ -24,7 +24,7 @@ extension ThemeConfig {
 		)
 	})
 	static let colorsIndicatorDict: [Theme.ColorKey : Theme.ColorValue] = [
-		.foreground : .color(.green),
+		.foreground : .color(.brown),
 		.foregroundSecondary : .color(.teal),
 		.foregroundOnBackground : .color(.yellow),
 		.foregroundDisabled : .color(.brown),
