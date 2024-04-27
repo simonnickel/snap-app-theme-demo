@@ -39,21 +39,18 @@ struct SettingsScene: View {
 					
 					SettingsRow(title: DisplayMode.title) {
 						SettingsPicker(setting: settings.value(.displayMode))
-						
 					}
 					
 					SettingsRow(title: NavigationLayout.title) {
 						SettingsPicker(setting: settings.value(.navigationLayout))
-						
 					}
 					
 					ThemeListRowNavigationLink(value: SettingsNavItem.tabs, state: navSelectionState) {
-						ThemeLabel(text: "Configure Tab Bar")
+						ThemeLabel(text: "Configure Tab Bar", style: .themeListRow())
 					}
 					
 				} header: {
-					ThemeLabel(text: "Appearance")
-						.labelStyle(.themeSectionHeader())
+					ThemeLabel(text: "Appearance", style: .themeSectionHeader())
 				}
 				
 			}
