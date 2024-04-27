@@ -24,7 +24,7 @@ extension ThemeConfig {
 		)
 	})
 	
-	static let fontsIndicatorDefinition = Theme.FontValue.definition(Theme.FontDefinition(size: 14, design: .monospaced, weight: .black))
+	static let fontsIndicatorDefinition = Theme.FontValue.definition(Theme.FontDefinition(size: 8, weight: .black))
 	static let fontsIndicatorDict: [Theme.FontKey : Theme.FontValue] = [
 		.screenHeader : fontsIndicatorDefinition,
 		.screenHeaderSubtitle : fontsIndicatorDefinition,
@@ -32,9 +32,9 @@ extension ThemeConfig {
 		
 		.textTitle : fontsIndicatorDefinition,
 		.textSubtitle : fontsIndicatorDefinition,
+		.textBlock : fontsIndicatorDefinition,
 		.textLabel : fontsIndicatorDefinition,
 		.textIcon : fontsIndicatorDefinition,
-		.textBlock : fontsIndicatorDefinition,
 		.textValue : fontsIndicatorDefinition,
 		.textFootnote : fontsIndicatorDefinition,
 		
@@ -42,29 +42,42 @@ extension ThemeConfig {
 		.cardSubtitle : fontsIndicatorDefinition,
 		.cardLabel : fontsIndicatorDefinition,
 		.cardIcon : fontsIndicatorDefinition,
-		.cardBlock : fontsIndicatorDefinition,
 		.cardValue : fontsIndicatorDefinition,
+		.cardBlock : fontsIndicatorDefinition,
 		.cardFootnote : fontsIndicatorDefinition,
 
 		.cardIndicator : fontsIndicatorDefinition,
-		
-		.listHeader : fontsIndicatorDefinition,
-		.listHeaderProminent : fontsIndicatorDefinition,
-		.listFooter : fontsIndicatorDefinition,
 		
 		.listTitle : fontsIndicatorDefinition,
 		.listSubtitle : fontsIndicatorDefinition,
 		.listLabel : fontsIndicatorDefinition,
 		.listIcon : fontsIndicatorDefinition,
-		.listBlock : fontsIndicatorDefinition,
 		.listValue : fontsIndicatorDefinition,
+		.listBlock : fontsIndicatorDefinition,
 		.listFootnote : fontsIndicatorDefinition,
+		
+		.listHeader : fontsIndicatorDefinition,
+		.listHeaderProminent : fontsIndicatorDefinition,
+		.listFooter : fontsIndicatorDefinition,
+		.listAccessoryNavigation : fontsIndicatorDefinition,
 		
 		.sidebarTitle : fontsIndicatorDefinition,
 		.sidebarLabel : fontsIndicatorDefinition,
+		.sidebarLabelSelected : fontsIndicatorDefinition,
+		.sidebarIcon : fontsIndicatorDefinition,
+		.sidebarIconSelected : fontsIndicatorDefinition,
 		
 		.labelButtonPrimary : fontsIndicatorDefinition,
 		.labelButtonSecondary : fontsIndicatorDefinition,
+		
+		.toolbarLabel : fontsIndicatorDefinition,
+		.toolbarIcon : fontsIndicatorDefinition,
+		.toolbarNavigationLabel : fontsIndicatorDefinition,
+		.toolbarNavigationIcon : fontsIndicatorDefinition,
+		.toolbarClose : fontsIndicatorDefinition,
+		
+		.controlTextField : fontsIndicatorDefinition,
+		.controlTextFieldProminent : fontsIndicatorDefinition,
 
 	]
 	
