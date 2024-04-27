@@ -29,11 +29,8 @@ struct ThemeConfigScene: View {
 					ThemeConfigSelectionView(options: [.fontDesignBase, .fontDesignRound, .fontDesignMono, .fontDesignSerif])
 				}
 				ConfigSection(title: "Numbers", configSectionID: "number") {
-					ThemeConfigSelectionView(options: [.numbersBase, .numbersAlternative])
+					ThemeConfigSelectionView(options: [.numbersBase, .numbersIndicator])
 					ThemeConfigSelectionView(options: [.numbersScale08, .numbersScale09, .numbersScaleBase, .numbersScale11, .numbersScale12])
-				}
-				ConfigSection(title: "Icons", configSectionID: "icon") {
-					ThemeConfigSelectionView(options: [.iconsBase, .iconsAlternative])
 				}
 				
 			}
