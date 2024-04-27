@@ -28,9 +28,6 @@ struct ThemeConfigScene: View {
 					ThemeConfigSelectionView(options: [.fontFamilyBase, .fontFamilyAlternative])
 					ThemeConfigSelectionView(options: [.fontDesignBase, .fontDesignRound, .fontDesignMono, .fontDesignSerif])
 				}
-				ConfigSection(title: "TextSurfaces", configSectionID: "textSurface") {
-					ThemeConfigSelectionView(options: [.textSurfacesBase, .textSurfacesAlternative])
-				}
 				ConfigSection(title: "Numbers", configSectionID: "number") {
 					ThemeConfigSelectionView(options: [.numbersBase, .numbersAlternative])
 					ThemeConfigSelectionView(options: [.numbersScale08, .numbersScale09, .numbersScaleBase, .numbersScale11, .numbersScale12])

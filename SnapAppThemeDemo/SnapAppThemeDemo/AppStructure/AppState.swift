@@ -18,7 +18,6 @@ struct AppState {
 		ThemeConfig.fontsBase,
 		ThemeConfig.fontFamilyBase,
 		ThemeConfig.fontDesignRound,
-		ThemeConfig.textSurfacesBase,
 		ThemeConfig.iconsBase,
 		ThemeConfig.numbersBase,
 		ThemeConfig.numbersScaleBase

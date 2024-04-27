@@ -30,7 +30,6 @@
 		5A1EEBB72BCD6EA100422FD8 /* ThemeConfig+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */; };
 		5A1EEBB82BCD6EA100422FD8 /* ThemeConfig+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */; };
 		5A1EEBB92BCD6EA100422FD8 /* ThemeConfig+Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */; };
-		5A1EEBBA2BCD6EA100422FD8 /* ThemeConfig+TextColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */; };
 		5A1EEBBB2BCD6EA100422FD8 /* ThemeConfig+Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Numbers.swift */; };
 		5A1EEBBC2BCD6EA100422FD8 /* ThemeConfigScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */; };
 		5A1EEBBD2BCD6EA100422FD8 /* ThemeConfigSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */; };
@@ -103,7 +102,6 @@
 		5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Colors.swift"; sourceTree = "<group>"; };
 		5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Fonts.swift"; sourceTree = "<group>"; };
 		5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Icons.swift"; sourceTree = "<group>"; };
-		5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+TextColors.swift"; sourceTree = "<group>"; };
 		5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Numbers.swift"; sourceTree = "<group>"; };
 		5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigScene.swift; sourceTree = "<group>"; };
 		5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfigSelectionView.swift; sourceTree = "<group>"; };
@@ -259,7 +257,6 @@
 				5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */,
 				5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */,
 				5A1EEB8F2BCD6EA100422FD8 /* ThemeConfig+Icons.swift */,
-				5A1EEB902BCD6EA100422FD8 /* ThemeConfig+TextColors.swift */,
 				5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Numbers.swift */,
 				5A1EEB922BCD6EA100422FD8 /* ThemeConfigScene.swift */,
 				5A1EEB932BCD6EA100422FD8 /* ThemeConfigSelectionView.swift */,
@@ -481,7 +478,6 @@
 				5A1EEBD62BCD6EA100422FD8 /* SettingsScene.swift in Sources */,
 				5A1EEBBC2BCD6EA100422FD8 /* ThemeConfigScene.swift in Sources */,
 				5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */,
-				5A1EEBBA2BCD6EA100422FD8 /* ThemeConfig+TextColors.swift in Sources */,
 				5A1EEBC52BCD6EA100422FD8 /* ExampleListScene.swift in Sources */,
 				5A1EEBD42BCD6EA100422FD8 /* NumberKeyList.swift in Sources */,
 				5A1EEBCC2BCD6EA100422FD8 /* BackgroundKeyList.swift in Sources */,
