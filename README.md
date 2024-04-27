@@ -14,3 +14,6 @@ An example app project to showcase the SNAP suite. It uses the SnapAppTemplate a
 
 [documentation]: https://swiftpackageindex.com/simonnickel/snap-app-theme-demo/main/documentation/snap-app-theme-demo
 [documentation badge]: https://img.shields.io/badge/Documentation-DocC-blue
+
+<img src="/screenshot-colors.png" height="400">
+<img src="/screenshot-colors-indicator.png" height="400">
