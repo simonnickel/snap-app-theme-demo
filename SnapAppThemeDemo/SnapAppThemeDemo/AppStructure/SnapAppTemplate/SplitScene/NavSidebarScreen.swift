@@ -29,6 +29,7 @@ struct NavSidebarScreen: View {
 					ForEach(section.subItems) { item in
 						
 						if isCollapsed {
+							
 							NavigationLink(value: item) {
 								ThemeLabel(
 									text: item.title,
@@ -37,7 +38,9 @@ struct NavSidebarScreen: View {
 								)
 							}
 							.themeListRow(isSelected: selection == item)
+							
 						} else {
+							
 							ThemeNavLinkSidebarRow(
 								value: item,
 								isSelected: selection == item
@@ -48,6 +51,7 @@ struct NavSidebarScreen: View {
 									style: .themeSidebar(isSelected: selection == item)
 								)
 							}
+							
 						}
 						
 					}
