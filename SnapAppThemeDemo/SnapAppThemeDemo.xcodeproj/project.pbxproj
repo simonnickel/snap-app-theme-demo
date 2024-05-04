@@ -138,7 +138,6 @@
 		5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
 		5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberKeys+App.swift"; sourceTree = "<group>"; };
 		5A1EEC172BCD740700422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5A1EEC192BCD740B00422FD8 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = TODO.md; path = ../TODO.md; sourceTree = "<group>"; };
 		5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Environment.swift"; sourceTree = "<group>"; };
 		5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Backgrounds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEC172BCD740700422FD8 /* README.md */,
-				5A1EEC192BCD740B00422FD8 /* TODO.md */,
 				5A1EEB572BCD6D6B00422FD8 /* SnapAppThemeDemo */,
 				5A1EEB562BCD6D6B00422FD8 /* Products */,
 			);
