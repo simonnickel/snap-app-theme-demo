@@ -41,6 +41,10 @@ struct SettingsScene: View {
 						SettingsPicker(setting: settings.value(.displayMode))
 					}
 					
+					SettingsRow(title: InterfaceScale.title) {
+						SettingsPicker(setting: settings.value(.interfaceScale))
+					}
+					
 					SettingsRow(title: NavigationLayout.title) {
 						SettingsPicker(setting: settings.value(.navigationLayout))
 					}

@@ -19,7 +19,6 @@ struct AppState {
 		ThemeConfig.fontFamilyBase,
 		ThemeConfig.fontDesignRound,
 		ThemeConfig.numbersBase,
-		ThemeConfig.numbersScaleBase
 	]
 	
 	var showThemeConfiguration = false
