@@ -45,6 +45,12 @@ struct SettingsScene: View {
 						SettingsPicker(setting: settings.value(.interfaceScale))
 					}
 					
+				} header: {
+					ThemeLabel(text: "Appearance", style: .themeSectionHeader())
+				}
+				
+				Section {
+					
 					SettingsRow(title: NavigationLayout.title) {
 						SettingsPicker(setting: settings.value(.navigationLayout))
 					}
@@ -54,7 +60,7 @@ struct SettingsScene: View {
 					}
 					
 				} header: {
-					ThemeLabel(text: "Appearance", style: .themeSectionHeader())
+					ThemeLabel(text: "Navigation", style: .themeSectionHeader())
 				}
 				
 			}
