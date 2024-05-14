@@ -26,16 +26,12 @@ struct ThemeConfigSelectionView: View {
 						
 						// Only preserve configs that are not part of this selection set.
 						var configs = appState.themeConfigs.filter { config in
-							!options.contains([config])
+							!options.contains(config)
 						}
 						// Add selected config.
 						configs.append(option)
 						
 						// Update AppState.
-						var templateState = templateStateBinding.wrappedValue
-						templateState.theme = option.apply(templateState.theme)
-						templateStateBinding.wrappedValue = templateState
-						
 						var state = appStateBinding.wrappedValue
 						state.themeConfigs = configs
 						appStateBinding.wrappedValue = state

@@ -17,8 +17,6 @@
 		5A1EEB802BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6D2BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift */; };
 		5A1EEB812BCD6E9B00422FD8 /* NavTabScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6E2BCD6E9B00422FD8 /* NavTabScene.swift */; };
 		5A1EEB822BCD6E9B00422FD8 /* NavTabSceneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6F2BCD6E9B00422FD8 /* NavTabSceneList.swift */; };
-		5A1EEB832BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */; };
-		5A1EEB842BCD6E9B00422FD8 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */; };
 		5A1EEB852BCD6E9B00422FD8 /* NavItem+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */; };
 		5A1EEB862BCD6E9B00422FD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB742BCD6E9B00422FD8 /* README.md */; };
 		5A1EEB872BCD6E9B00422FD8 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */; };
@@ -88,8 +86,6 @@
 		5A1EEB6D2BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavItem+TabConfiguration.swift"; sourceTree = "<group>"; };
 		5A1EEB6E2BCD6E9B00422FD8 /* NavTabScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTabScene.swift; sourceTree = "<group>"; };
 		5A1EEB6F2BCD6E9B00422FD8 /* NavTabSceneList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTabSceneList.swift; sourceTree = "<group>"; };
-		5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDependencies+ViewModifier.swift"; sourceTree = "<group>"; };
-		5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavItem+Template.swift"; sourceTree = "<group>"; };
 		5A1EEB742BCD6E9B00422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
@@ -221,8 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB742BCD6E9B00422FD8 /* README.md */,
-				5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */,
-				5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */,
 				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
 				5A64102C2BD6F4E90023F0F0 /* Environment */,
 				5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */,
@@ -478,7 +472,6 @@
 				5A1EEBCC2BCD6EA100422FD8 /* BackgroundKeyList.swift in Sources */,
 				5A1EEB8A2BCD6E9B00422FD8 /* NavItem.swift in Sources */,
 				5A1EEBC62BCD6EA100422FD8 /* ExampleListSection.swift in Sources */,
-				5A1EEB832BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift in Sources */,
 				5A1EEBD02BCD6EA100422FD8 /* SplitBackgroundContainer.swift in Sources */,
 				5A1EEB802BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift in Sources */,
 				5A1EEBC82BCD6EA100422FD8 /* ExampleCardView.swift in Sources */,
@@ -496,7 +489,6 @@
 				5A1EEBCB2BCD6EA100422FD8 /* ExampleTextScreen.swift in Sources */,
 				5A1EEB7F2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift in Sources */,
 				5A1EEBE72BCD6EAF00422FD8 /* IconKeys+App.swift in Sources */,
-				5A1EEB842BCD6E9B00422FD8 /* DependencyContainer.swift in Sources */,
 				5A1EEB852BCD6E9B00422FD8 /* NavItem+Template.swift in Sources */,
 				5A1EEBC22BCD6EA100422FD8 /* ExampleListLoop.swift in Sources */,
 				5A1EEB892BCD6E9B00422FD8 /* AppState.swift in Sources */,
