@@ -78,6 +78,7 @@
 		5A457B432BF3557200A2A39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A457B422BF3557200A2A39B /* Assets.xcassets */; };
 		5A457B472BF3557200A2A39B /* ThemeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5A457B4D2BF3576D00A2A39B /* SnapTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 5A457B4C2BF3576D00A2A39B /* SnapTheme */; };
+		5A457B512BF35DB400A2A39B /* ThemeWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A457B4F2BF35D8200A2A39B /* ThemeWidgetProvider.swift */; };
 		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
 		5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
 /* End PBXBuildFile section */
@@ -176,6 +177,7 @@
 		5A457B402BF3557000A2A39B /* ThemeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeWidget.swift; sourceTree = "<group>"; };
 		5A457B422BF3557200A2A39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A457B442BF3557200A2A39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A457B4F2BF35D8200A2A39B /* ThemeWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeWidgetProvider.swift; sourceTree = "<group>"; };
 		5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Environment.swift"; sourceTree = "<group>"; };
 		5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Backgrounds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -429,6 +431,7 @@
 			children = (
 				5A457B3E2BF3557000A2A39B /* ThemeWidgetBundle.swift */,
 				5A457B402BF3557000A2A39B /* ThemeWidget.swift */,
+				5A457B4F2BF35D8200A2A39B /* ThemeWidgetProvider.swift */,
 				5A457B422BF3557200A2A39B /* Assets.xcassets */,
 				5A457B442BF3557200A2A39B /* Info.plist */,
 			);
@@ -627,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A457B512BF35DB400A2A39B /* ThemeWidgetProvider.swift in Sources */,
 				5A457B3F2BF3557000A2A39B /* ThemeWidgetBundle.swift in Sources */,
 				5A457B412BF3557000A2A39B /* ThemeWidget.swift in Sources */,
 			);
