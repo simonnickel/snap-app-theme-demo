@@ -71,9 +71,39 @@
 		5A1EEBF52BCD6FDF00422FD8 /* SnapMatchingNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */; };
 		5A1EEBF82BCD6FFC00422FD8 /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF72BCD6FFC00422FD8 /* SnapCore */; };
 		5A1EEBFB2BCD700D00422FD8 /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */; };
+		5A457B3A2BF3557000A2A39B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A457B392BF3557000A2A39B /* WidgetKit.framework */; };
+		5A457B3C2BF3557000A2A39B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A457B3B2BF3557000A2A39B /* SwiftUI.framework */; };
+		5A457B3F2BF3557000A2A39B /* ThemeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A457B3E2BF3557000A2A39B /* ThemeWidgetBundle.swift */; };
+		5A457B412BF3557000A2A39B /* ThemeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A457B402BF3557000A2A39B /* ThemeWidget.swift */; };
+		5A457B432BF3557200A2A39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A457B422BF3557200A2A39B /* Assets.xcassets */; };
+		5A457B472BF3557200A2A39B /* ThemeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
 		5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A457B452BF3557200A2A39B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A1EEB4D2BCD6D6B00422FD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A457B362BF3557000A2A39B;
+			remoteInfo = ThemeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A457B482BF3557200A2A39B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A457B472BF3557200A2A39B /* ThemeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5A1EEB552BCD6D6B00422FD8 /* SnapAppThemeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapAppThemeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +168,13 @@
 		5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
 		5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberKeys+App.swift"; sourceTree = "<group>"; };
 		5A1EEC172BCD740700422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ThemeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A457B392BF3557000A2A39B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5A457B3B2BF3557000A2A39B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5A457B3E2BF3557000A2A39B /* ThemeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeWidgetBundle.swift; sourceTree = "<group>"; };
+		5A457B402BF3557000A2A39B /* ThemeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeWidget.swift; sourceTree = "<group>"; };
+		5A457B422BF3557200A2A39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A457B442BF3557200A2A39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Environment.swift"; sourceTree = "<group>"; };
 		5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Backgrounds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +192,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A457B342BF3557000A2A39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A457B3C2BF3557000A2A39B /* SwiftUI.framework in Frameworks */,
+				5A457B3A2BF3557000A2A39B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -163,6 +209,8 @@
 			children = (
 				5A1EEC172BCD740700422FD8 /* README.md */,
 				5A1EEB572BCD6D6B00422FD8 /* SnapAppThemeDemo */,
+				5A457B3D2BF3557000A2A39B /* ThemeWidget */,
+				5A457B382BF3557000A2A39B /* Frameworks */,
 				5A1EEB562BCD6D6B00422FD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB552BCD6D6B00422FD8 /* SnapAppThemeDemo.app */,
+				5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -364,6 +413,26 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		5A457B382BF3557000A2A39B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A457B392BF3557000A2A39B /* WidgetKit.framework */,
+				5A457B3B2BF3557000A2A39B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A457B3D2BF3557000A2A39B /* ThemeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5A457B3E2BF3557000A2A39B /* ThemeWidgetBundle.swift */,
+				5A457B402BF3557000A2A39B /* ThemeWidget.swift */,
+				5A457B422BF3557200A2A39B /* Assets.xcassets */,
+				5A457B442BF3557200A2A39B /* Info.plist */,
+			);
+			path = ThemeWidget;
+			sourceTree = "<group>";
+		};
 		5A64102C2BD6F4E90023F0F0 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,10 +451,12 @@
 				5A1EEB512BCD6D6B00422FD8 /* Sources */,
 				5A1EEB522BCD6D6B00422FD8 /* Frameworks */,
 				5A1EEB532BCD6D6B00422FD8 /* Resources */,
+				5A457B482BF3557200A2A39B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5A457B462BF3557200A2A39B /* PBXTargetDependency */,
 			);
 			name = SnapAppThemeDemo;
 			packageProductDependencies = (
@@ -399,6 +470,23 @@
 			productReference = 5A1EEB552BCD6D6B00422FD8 /* SnapAppThemeDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5A457B362BF3557000A2A39B /* ThemeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A457B4B2BF3557200A2A39B /* Build configuration list for PBXNativeTarget "ThemeWidgetExtension" */;
+			buildPhases = (
+				5A457B332BF3557000A2A39B /* Sources */,
+				5A457B342BF3557000A2A39B /* Frameworks */,
+				5A457B352BF3557000A2A39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThemeWidgetExtension;
+			productName = ThemeWidgetExtension;
+			productReference = 5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -410,6 +498,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					5A1EEB542BCD6D6B00422FD8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					5A457B362BF3557000A2A39B = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -435,6 +526,7 @@
 			projectRoot = "";
 			targets = (
 				5A1EEB542BCD6D6B00422FD8 /* SnapAppThemeDemo */,
+				5A457B362BF3557000A2A39B /* ThemeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -448,6 +540,14 @@
 				5A1EEBEB2BCD6EAF00422FD8 /* ThemeColors.xcassets in Resources */,
 				5A1EEB612BCD6D6D00422FD8 /* Preview Assets.xcassets in Resources */,
 				5A1EEB5D2BCD6D6D00422FD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A457B352BF3557000A2A39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A457B432BF3557200A2A39B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +618,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A457B332BF3557000A2A39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A457B3F2BF3557000A2A39B /* ThemeWidgetBundle.swift in Sources */,
+				5A457B412BF3557000A2A39B /* ThemeWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A457B462BF3557200A2A39B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A457B362BF3557000A2A39B /* ThemeWidgetExtension */;
+			targetProxy = 5A457B452BF3557200A2A39B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5A1EEB622BCD6D6D00422FD8 /* Debug */ = {
@@ -638,6 +755,7 @@
 		5A1EEB652BCD6D6D00422FD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SnapAppThemeDemo/SnapAppThemeDemo.entitlements;
@@ -676,6 +794,7 @@
 		5A1EEB662BCD6D6D00422FD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SnapAppThemeDemo/SnapAppThemeDemo.entitlements;
@@ -711,6 +830,65 @@
 			};
 			name = Release;
 		};
+		5A457B492BF3557200A2A39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QPW6B8MS22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThemeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThemeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.simonnickel.SnapAppThemeDemo.ThemeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A457B4A2BF3557200A2A39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QPW6B8MS22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThemeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThemeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.simonnickel.SnapAppThemeDemo.ThemeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -728,6 +906,15 @@
 			buildConfigurations = (
 				5A1EEB652BCD6D6D00422FD8 /* Debug */,
 				5A1EEB662BCD6D6D00422FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A457B4B2BF3557200A2A39B /* Build configuration list for PBXNativeTarget "ThemeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A457B492BF3557200A2A39B /* Debug */,
+				5A457B4A2BF3557200A2A39B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
