@@ -28,15 +28,18 @@ struct ExampleListScene: View {
 			// MARK: Configuration
 			
 			Section {
-				// TODO FB12181540: Should be able to apply color and font to Picker.
+
+				ThemePickerListRow(selection: $selectedStyle, options: Theme.ThemeListStyle.allCases) {
+					ThemeLabel(text: "List Style", icon: .navLists, style: .themeListRow())
+				}
+
 				PickerTapable(selection: $selectedStyle) {
 					ForEach(Theme.ThemeListStyle.allCases, id: \.self) { style in
-						ThemeLabel(text: style.rawValue, style: .themeListRow())
+						ThemeLabel(text: style.rawValue)
 							.tag(style)
 					}
 				} label: {
-					ThemeLabel(text: "List Style", icon: .navLists)
-						.labelStyle(.themeListRow())
+					ThemeLabel(text: "List Style", icon: .navLists, style: .themeListRow())
 				}
 				
 				ToggleTapable(isOn: $prominentHeader, label: {
