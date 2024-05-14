@@ -77,6 +77,7 @@
 		5A457B412BF3557000A2A39B /* ThemeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A457B402BF3557000A2A39B /* ThemeWidget.swift */; };
 		5A457B432BF3557200A2A39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A457B422BF3557200A2A39B /* Assets.xcassets */; };
 		5A457B472BF3557200A2A39B /* ThemeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A457B4D2BF3576D00A2A39B /* SnapTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 5A457B4C2BF3576D00A2A39B /* SnapTheme */; };
 		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
 		5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
 /* End PBXBuildFile section */
@@ -198,6 +199,7 @@
 			files = (
 				5A457B3C2BF3557000A2A39B /* SwiftUI.framework in Frameworks */,
 				5A457B3A2BF3557000A2A39B /* WidgetKit.framework in Frameworks */,
+				5A457B4D2BF3576D00A2A39B /* SnapTheme in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +485,9 @@
 			dependencies = (
 			);
 			name = ThemeWidgetExtension;
+			packageProductDependencies = (
+				5A457B4C2BF3576D00A2A39B /* SnapTheme */,
+			);
 			productName = ThemeWidgetExtension;
 			productReference = 5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -989,6 +994,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5A1EEBF92BCD700D00422FD8 /* XCRemoteSwiftPackageReference "snap-settings-service" */;
 			productName = SnapSettingsService;
+		};
+		5A457B4C2BF3576D00A2A39B /* SnapTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1EEBED2BCD6FB800422FD8 /* XCRemoteSwiftPackageReference "snap-theme" */;
+			productName = SnapTheme;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

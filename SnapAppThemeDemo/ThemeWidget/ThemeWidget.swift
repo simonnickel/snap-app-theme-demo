@@ -7,6 +7,7 @@
 
 import WidgetKit
 import SwiftUI
+import SnapTheme
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -58,14 +59,10 @@ struct ThemeWidget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(iOS 17.0, *) {
-                ThemeWidgetEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                ThemeWidgetEntryView(entry: entry)
-                    .padding()
-                    .background()
-            }
+			
+			ThemeWidgetEntryView(entry: entry)
+				.theme(containerBackground: .interactive, placement: .widget)
+			
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
@@ -76,5 +73,5 @@ struct ThemeWidget: Widget {
     ThemeWidget()
 } timeline: {
     SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
+    SimpleEntry(date: .now+9999, emoji: "🤩")
 }
