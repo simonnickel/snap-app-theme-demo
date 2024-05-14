@@ -69,6 +69,7 @@
 		5A1EEBF52BCD6FDF00422FD8 /* SnapMatchingNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF42BCD6FDF00422FD8 /* SnapMatchingNavigation */; };
 		5A1EEBF82BCD6FFC00422FD8 /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBF72BCD6FFC00422FD8 /* SnapCore */; };
 		5A1EEBFB2BCD700D00422FD8 /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1EEBFA2BCD700D00422FD8 /* SnapSettingsService */; };
+		5A4567102BF3C129001029CB /* AppContent+TemplateBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A45670F2BF3C129001029CB /* AppContent+TemplateBody.swift */; };
 		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
 		5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,7 @@
 		5A1EEBE12BCD6EAF00422FD8 /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
 		5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberKeys+App.swift"; sourceTree = "<group>"; };
 		5A1EEC172BCD740700422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5A45670F2BF3C129001029CB /* AppContent+TemplateBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppContent+TemplateBody.swift"; sourceTree = "<group>"; };
 		5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Environment.swift"; sourceTree = "<group>"; };
 		5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Backgrounds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,8 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB742BCD6E9B00422FD8 /* README.md */,
-				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
-				5A64102C2BD6F4E90023F0F0 /* Environment */,
+				5A64102C2BD6F4E90023F0F0 /* AppStructure */,
 				5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */,
 				5A1EEB702BCD6E9B00422FD8 /* TabScene */,
 			);
@@ -358,12 +359,14 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		5A64102C2BD6F4E90023F0F0 /* Environment */ = {
+		5A64102C2BD6F4E90023F0F0 /* AppStructure */ = {
 			isa = PBXGroup;
 			children = (
+				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
 				5A1EEB672BCD6E9B00422FD8 /* AppState+Environment.swift */,
+				5A45670F2BF3C129001029CB /* AppContent+TemplateBody.swift */,
 			);
-			path = Environment;
+			path = AppStructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,6 +496,7 @@
 				5A1EEBC22BCD6EA100422FD8 /* ExampleListLoop.swift in Sources */,
 				5A1EEB892BCD6E9B00422FD8 /* AppState.swift in Sources */,
 				5A1EEB592BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift in Sources */,
+				5A4567102BF3C129001029CB /* AppContent+TemplateBody.swift in Sources */,
 				5A1EEB882BCD6E9B00422FD8 /* AppDependencies.swift in Sources */,
 				5A1EEBC02BCD6EA100422FD8 /* LabelStyleModel.swift in Sources */,
 				5A1EEBBD2BCD6EA100422FD8 /* ThemeConfigSelectionView.swift in Sources */,

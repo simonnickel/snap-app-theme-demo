@@ -19,27 +19,21 @@ struct AppContent: View {
 	
 	var body: some View {
 		
-		TemplateContent(splitScene: {
-			NavSplitScene(sections: NavItem.sidebarSections)
-		}, tabScene: { settings in
-			NavTabScene(tabsSetting: settings.value(.navigationTabs))
-		}, settingsScene: {
-			SettingsScene()
-		})
-		.onChange(of: appState.showThemeConfiguration, { oldValue, newValue in
-			if oldValue == false && newValue == true {
-				templateStateBinding.navigationSplitSidebarVisibility.wrappedValue = .detailOnly
-			}
-		})
-		.modalPresentation(style: .automaticFixed, isPresented: appStateBinding.showThemeConfiguration, content: {
-			ThemeCloseContainer() {
-				ThemeConfigScene()
-			} onClose: {
-				appStateBinding.showThemeConfiguration.wrappedValue = false
-			}
-			.themeModal()
-			
-		})
+		templateBody
+			.onChange(of: appState.showThemeConfiguration, { oldValue, newValue in
+				if oldValue == false && newValue == true {
+					templateStateBinding.navigationSplitSidebarVisibility.wrappedValue = .detailOnly
+				}
+			})
+			.modalPresentation(style: .automaticFixed, isPresented: appStateBinding.showThemeConfiguration, content: {
+				ThemeCloseContainer() {
+					ThemeConfigScene()
+				} onClose: {
+					appStateBinding.showThemeConfiguration.wrappedValue = false
+				}
+				.themeModal()
+				
+			})
 		
 	}
 	
