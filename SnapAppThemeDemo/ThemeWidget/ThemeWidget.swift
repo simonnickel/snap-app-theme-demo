@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 import SnapTheme
+import SnapTemplateShared
 
 struct ThemeWidgetEntryView : View {
     var entry: Provider.Entry
@@ -25,12 +26,24 @@ struct ThemeWidgetEntryView : View {
 
 struct ThemeWidget: Widget {
     let kind: String = "ThemeWidget"
+	
+	private let dependenciesTemplate: TemplateDependencies
+	private let dependencies: AppDependencies
+	
+	init() {
+		
+		self.dependenciesTemplate = TemplateDependencies(templateState: .init(theme: .baseApp))
+		self.dependencies = AppDependencies(templateDependencies: dependenciesTemplate)
+		
+	}
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
 			
 			ThemeWidgetEntryView(entry: entry)
 				.theme(containerBackground: .interactive, placement: .widget)
+				.apply(dependencies)
+				.apply(dependenciesTemplate)
 			
         }
         .configurationDisplayName("My Widget")

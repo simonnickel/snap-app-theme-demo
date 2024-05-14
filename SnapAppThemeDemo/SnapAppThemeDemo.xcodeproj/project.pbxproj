@@ -81,6 +81,9 @@
 		5A457B512BF35DB400A2A39B /* ThemeWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A457B4F2BF35D8200A2A39B /* ThemeWidgetProvider.swift */; };
 		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
 		5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
+		5AA64E112BF36A3E00CABD71 /* SnapTemplateShared in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA64E102BF36A3E00CABD71 /* SnapTemplateShared */; };
+		5AA64E132BF36A7000CABD71 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */; };
+		5AA64E142BF36A7800CABD71 /* AppDependencies+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +205,7 @@
 				5A457B3C2BF3557000A2A39B /* SwiftUI.framework in Frameworks */,
 				5A457B3A2BF3557000A2A39B /* WidgetKit.framework in Frameworks */,
 				5A457B4D2BF3576D00A2A39B /* SnapTheme in Frameworks */,
+				5AA64E112BF36A3E00CABD71 /* SnapTemplateShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +494,7 @@
 			name = ThemeWidgetExtension;
 			packageProductDependencies = (
 				5A457B4C2BF3576D00A2A39B /* SnapTheme */,
+				5AA64E102BF36A3E00CABD71 /* SnapTemplateShared */,
 			);
 			productName = ThemeWidgetExtension;
 			productReference = 5A457B372BF3557000A2A39B /* ThemeWidgetExtension.appex */;
@@ -632,6 +637,8 @@
 			files = (
 				5A457B512BF35DB400A2A39B /* ThemeWidgetProvider.swift in Sources */,
 				5A457B3F2BF3557000A2A39B /* ThemeWidgetBundle.swift in Sources */,
+				5AA64E132BF36A7000CABD71 /* AppDependencies.swift in Sources */,
+				5AA64E142BF36A7800CABD71 /* AppDependencies+ViewModifier.swift in Sources */,
 				5A457B412BF3557000A2A39B /* ThemeWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1005,6 +1012,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5A1EEBED2BCD6FB800422FD8 /* XCRemoteSwiftPackageReference "snap-theme" */;
 			productName = SnapTheme;
+		};
+		5AA64E102BF36A3E00CABD71 /* SnapTemplateShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1EEBF02BCD6FCD00422FD8 /* XCRemoteSwiftPackageReference "snap-template-shared" */;
+			productName = SnapTemplateShared;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
