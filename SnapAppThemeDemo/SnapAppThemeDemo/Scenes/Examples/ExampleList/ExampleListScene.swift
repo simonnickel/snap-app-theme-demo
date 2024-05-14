@@ -29,9 +29,7 @@ struct ExampleListScene: View {
 			
 			Section {
 
-				ThemePickerListRow(selection: $selectedStyle, options: Theme.ThemeListStyle.allCases) {
-					ThemeLabel(text: "List Style", icon: .navLists, style: .themeListRow())
-				}
+				ThemePickerListRow(text: "List Style", icon: .navLists, selection: $selectedStyle, options: Theme.ThemeListStyle.allCases)
 
 				PickerTapable(selection: $selectedStyle) {
 					ForEach(Theme.ThemeListStyle.allCases, id: \.self) { style in
@@ -41,6 +39,7 @@ struct ExampleListScene: View {
 				} label: {
 					ThemeLabel(text: "List Style", icon: .navLists, style: .themeListRow())
 				}
+				.themeListRow()
 				
 				ToggleTapable(isOn: $prominentHeader, label: {
 					ThemeLabel(text: "Prominent Header", icon: .favorite)
