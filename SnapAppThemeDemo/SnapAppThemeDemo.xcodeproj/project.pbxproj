@@ -21,7 +21,7 @@
 		5A1EEB842BCD6E9B00422FD8 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */; };
 		5A1EEB852BCD6E9B00422FD8 /* NavItem+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */; };
 		5A1EEB862BCD6E9B00422FD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB742BCD6E9B00422FD8 /* README.md */; };
-		5A1EEB872BCD6E9B00422FD8 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */; };
+		5A1EEB872BCD6E9B00422FD8 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */; };
 		5A1EEB882BCD6E9B00422FD8 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */; };
 		5A1EEB892BCD6E9B00422FD8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB782BCD6E9B00422FD8 /* AppState.swift */; };
 		5A1EEB8A2BCD6E9B00422FD8 /* NavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */; };
@@ -92,7 +92,7 @@
 		5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavItem+Template.swift"; sourceTree = "<group>"; };
 		5A1EEB742BCD6E9B00422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
 		5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		5A1EEB782BCD6E9B00422FD8 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavItem.swift; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB752BCD6E9B00422FD8 /* SnapAppTemplate */,
-				5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */,
+				5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */,
 				5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */,
 				5A1EEB782BCD6E9B00422FD8 /* AppState.swift */,
 				5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */,
@@ -492,7 +492,7 @@
 				5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */,
 				5A1EEBB72BCD6EA100422FD8 /* ThemeConfig+Colors.swift in Sources */,
 				5A1EEBD32BCD6EA100422FD8 /* ThemeKeyList.swift in Sources */,
-				5A1EEB872BCD6E9B00422FD8 /* AppContainer.swift in Sources */,
+				5A1EEB872BCD6E9B00422FD8 /* AppContent.swift in Sources */,
 				5A1EEBCB2BCD6EA100422FD8 /* ExampleTextScreen.swift in Sources */,
 				5A1EEB7F2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift in Sources */,
 				5A1EEBE72BCD6EAF00422FD8 /* IconKeys+App.swift in Sources */,
