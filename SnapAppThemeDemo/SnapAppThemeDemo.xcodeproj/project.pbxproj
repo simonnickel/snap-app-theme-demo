@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A120F8E2BF6166000E32BAF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB782BCD6E9B00422FD8 /* AppState.swift */; };
+		5A120F8F2BF6167800E32BAF /* AppState+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB672BCD6E9B00422FD8 /* AppState+Environment.swift */; };
+		5A120F902BF6168700E32BAF /* ThemeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8C2BCD6EA100422FD8 /* ThemeConfig.swift */; };
+		5A120F912BF616CA00E32BAF /* ThemeConfig+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8D2BCD6EA100422FD8 /* ThemeConfig+Colors.swift */; };
+		5A120F922BF6173900E32BAF /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
+		5A120F932BF6173F00E32BAF /* ThemeConfig+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB8E2BCD6EA100422FD8 /* ThemeConfig+Fonts.swift */; };
+		5A120F942BF6174200E32BAF /* ThemeConfig+Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB912BCD6EA100422FD8 /* ThemeConfig+Numbers.swift */; };
+		5A120F962BF6175400E32BAF /* ColorKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDB2BCD6EAF00422FD8 /* ColorKeys+App.swift */; };
+		5A120F972BF6175700E32BAF /* IconKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDD2BCD6EAF00422FD8 /* IconKeys+App.swift */; };
+		5A120F982BF6175A00E32BAF /* FontKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDC2BCD6EAF00422FD8 /* FontKeys+App.swift */; };
+		5A120F992BF6175D00E32BAF /* SurfaceKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDE2BCD6EAF00422FD8 /* SurfaceKeys+App.swift */; };
+		5A120F9A2BF6176100E32BAF /* TextSurfaceKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDF2BCD6EAF00422FD8 /* TextSurfaceKeys+App.swift */; };
+		5A120F9B2BF6176500E32BAF /* NumberKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE22BCD6EAF00422FD8 /* NumberKeys+App.swift */; };
+		5A120F9C2BF6177D00E32BAF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBE02BCD6EAF00422FD8 /* Theme.swift */; };
+		5A120F9D2BF6179700E32BAF /* BackgroundKeys+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEBDA2BCD6EAF00422FD8 /* BackgroundKeys+App.swift */; };
 		5A1EEB592BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB582BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift */; };
 		5A1EEB5D2BCD6D6D00422FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB5C2BCD6D6D00422FD8 /* Assets.xcassets */; };
 		5A1EEB612BCD6D6D00422FD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB602BCD6D6D00422FD8 /* Preview Assets.xcassets */; };
@@ -17,11 +32,9 @@
 		5A1EEB802BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6D2BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift */; };
 		5A1EEB812BCD6E9B00422FD8 /* NavTabScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6E2BCD6E9B00422FD8 /* NavTabScene.swift */; };
 		5A1EEB822BCD6E9B00422FD8 /* NavTabSceneList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB6F2BCD6E9B00422FD8 /* NavTabSceneList.swift */; };
-		5A1EEB832BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */; };
-		5A1EEB842BCD6E9B00422FD8 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */; };
 		5A1EEB852BCD6E9B00422FD8 /* NavItem+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */; };
 		5A1EEB862BCD6E9B00422FD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EEB742BCD6E9B00422FD8 /* README.md */; };
-		5A1EEB872BCD6E9B00422FD8 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */; };
+		5A1EEB872BCD6E9B00422FD8 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */; };
 		5A1EEB882BCD6E9B00422FD8 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */; };
 		5A1EEB892BCD6E9B00422FD8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB782BCD6E9B00422FD8 /* AppState.swift */; };
 		5A1EEB8A2BCD6E9B00422FD8 /* NavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */; };
@@ -80,10 +93,11 @@
 		5A457B4D2BF3576D00A2A39B /* SnapTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 5A457B4C2BF3576D00A2A39B /* SnapTheme */; };
 		5A457B512BF35DB400A2A39B /* ThemeWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A457B4F2BF35D8200A2A39B /* ThemeWidgetProvider.swift */; };
 		5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */; };
+		5A6BBC2C2BF6152000859534 /* AppContent+TemplateBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6BBC2B2BF6152000859534 /* AppContent+TemplateBody.swift */; };
 		5A9D547D2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */; };
 		5AA64E112BF36A3E00CABD71 /* SnapTemplateShared in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA64E102BF36A3E00CABD71 /* SnapTemplateShared */; };
 		5AA64E132BF36A7000CABD71 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */; };
-		5AA64E142BF36A7800CABD71 /* AppDependencies+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */; };
+		5AA64E142BF36A7800CABD71 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,11 +137,9 @@
 		5A1EEB6D2BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavItem+TabConfiguration.swift"; sourceTree = "<group>"; };
 		5A1EEB6E2BCD6E9B00422FD8 /* NavTabScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTabScene.swift; sourceTree = "<group>"; };
 		5A1EEB6F2BCD6E9B00422FD8 /* NavTabSceneList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTabSceneList.swift; sourceTree = "<group>"; };
-		5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDependencies+ViewModifier.swift"; sourceTree = "<group>"; };
-		5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavItem+Template.swift"; sourceTree = "<group>"; };
 		5A1EEB742BCD6E9B00422FD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
 		5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		5A1EEB782BCD6E9B00422FD8 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5A1EEB792BCD6E9B00422FD8 /* NavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavItem.swift; sourceTree = "<group>"; };
@@ -182,6 +194,7 @@
 		5A457B442BF3557200A2A39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A457B4F2BF35D8200A2A39B /* ThemeWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeWidgetProvider.swift; sourceTree = "<group>"; };
 		5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Environment.swift"; sourceTree = "<group>"; };
+		5A6BBC2B2BF6152000859534 /* AppContent+TemplateBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppContent+TemplateBody.swift"; sourceTree = "<group>"; };
 		5A9D547C2BDB890C00D61F28 /* ThemeConfig+Backgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeConfig+Backgrounds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,10 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB742BCD6E9B00422FD8 /* README.md */,
-				5A1EEB712BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift */,
-				5A1EEB722BCD6E9B00422FD8 /* DependencyContainer.swift */,
-				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
-				5A64102C2BD6F4E90023F0F0 /* Environment */,
+				5A64102C2BD6F4E90023F0F0 /* AppStructure */,
 				5A1EEB6C2BCD6E9B00422FD8 /* SplitScene */,
 				5A1EEB702BCD6E9B00422FD8 /* TabScene */,
 			);
@@ -292,7 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1EEB752BCD6E9B00422FD8 /* SnapAppTemplate */,
-				5A1EEB762BCD6E9B00422FD8 /* AppContainer.swift */,
+				5A1EEB762BCD6E9B00422FD8 /* AppContent.swift */,
 				5A1EEB772BCD6E9B00422FD8 /* AppDependencies.swift */,
 				5A1EEB782BCD6E9B00422FD8 /* AppState.swift */,
 				5A64102A2BD6F4D30023F0F0 /* App+Environment.swift */,
@@ -442,12 +452,14 @@
 			path = ThemeWidget;
 			sourceTree = "<group>";
 		};
-		5A64102C2BD6F4E90023F0F0 /* Environment */ = {
+		5A64102C2BD6F4E90023F0F0 /* AppStructure */ = {
 			isa = PBXGroup;
 			children = (
+				5A6BBC2B2BF6152000859534 /* AppContent+TemplateBody.swift */,
+				5A1EEB732BCD6E9B00422FD8 /* NavItem+Template.swift */,
 				5A1EEB672BCD6E9B00422FD8 /* AppState+Environment.swift */,
 			);
-			path = Environment;
+			path = AppStructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -591,7 +603,6 @@
 				5A1EEBCC2BCD6EA100422FD8 /* BackgroundKeyList.swift in Sources */,
 				5A1EEB8A2BCD6E9B00422FD8 /* NavItem.swift in Sources */,
 				5A1EEBC62BCD6EA100422FD8 /* ExampleListSection.swift in Sources */,
-				5A1EEB832BCD6E9B00422FD8 /* AppDependencies+ViewModifier.swift in Sources */,
 				5A1EEBD02BCD6EA100422FD8 /* SplitBackgroundContainer.swift in Sources */,
 				5A1EEB802BCD6E9B00422FD8 /* NavItem+TabConfiguration.swift in Sources */,
 				5A1EEBC82BCD6EA100422FD8 /* ExampleCardView.swift in Sources */,
@@ -605,15 +616,15 @@
 				5A64102B2BD6F4D30023F0F0 /* App+Environment.swift in Sources */,
 				5A1EEBB72BCD6EA100422FD8 /* ThemeConfig+Colors.swift in Sources */,
 				5A1EEBD32BCD6EA100422FD8 /* ThemeKeyList.swift in Sources */,
-				5A1EEB872BCD6E9B00422FD8 /* AppContainer.swift in Sources */,
+				5A1EEB872BCD6E9B00422FD8 /* AppContent.swift in Sources */,
 				5A1EEBCB2BCD6EA100422FD8 /* ExampleTextScreen.swift in Sources */,
 				5A1EEB7F2BCD6E9B00422FD8 /* ToolbarButtonSettings.swift in Sources */,
 				5A1EEBE72BCD6EAF00422FD8 /* IconKeys+App.swift in Sources */,
-				5A1EEB842BCD6E9B00422FD8 /* DependencyContainer.swift in Sources */,
 				5A1EEB852BCD6E9B00422FD8 /* NavItem+Template.swift in Sources */,
 				5A1EEBC22BCD6EA100422FD8 /* ExampleListLoop.swift in Sources */,
 				5A1EEB892BCD6E9B00422FD8 /* AppState.swift in Sources */,
 				5A1EEB592BCD6D6B00422FD8 /* SnapAppThemeDemoApp.swift in Sources */,
+				5A6BBC2C2BF6152000859534 /* AppContent+TemplateBody.swift in Sources */,
 				5A1EEB882BCD6E9B00422FD8 /* AppDependencies.swift in Sources */,
 				5A1EEBC02BCD6EA100422FD8 /* LabelStyleModel.swift in Sources */,
 				5A1EEBBD2BCD6EA100422FD8 /* ThemeConfigSelectionView.swift in Sources */,
@@ -635,10 +646,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A120F9B2BF6176500E32BAF /* NumberKeys+App.swift in Sources */,
+				5A120F972BF6175700E32BAF /* IconKeys+App.swift in Sources */,
+				5A120F992BF6175D00E32BAF /* SurfaceKeys+App.swift in Sources */,
+				5A120F942BF6174200E32BAF /* ThemeConfig+Numbers.swift in Sources */,
 				5A457B512BF35DB400A2A39B /* ThemeWidgetProvider.swift in Sources */,
+				5A120F932BF6173F00E32BAF /* ThemeConfig+Fonts.swift in Sources */,
+				5A120F922BF6173900E32BAF /* ThemeConfig+Backgrounds.swift in Sources */,
 				5A457B3F2BF3557000A2A39B /* ThemeWidgetBundle.swift in Sources */,
 				5AA64E132BF36A7000CABD71 /* AppDependencies.swift in Sources */,
-				5AA64E142BF36A7800CABD71 /* AppDependencies+ViewModifier.swift in Sources */,
+				5A120F8E2BF6166000E32BAF /* AppState.swift in Sources */,
+				5A120F8F2BF6167800E32BAF /* AppState+Environment.swift in Sources */,
+				5A120F902BF6168700E32BAF /* ThemeConfig.swift in Sources */,
+				5A120F982BF6175A00E32BAF /* FontKeys+App.swift in Sources */,
+				5A120F9C2BF6177D00E32BAF /* Theme.swift in Sources */,
+				5A120F9A2BF6176100E32BAF /* TextSurfaceKeys+App.swift in Sources */,
+				5A120F9D2BF6179700E32BAF /* BackgroundKeys+App.swift in Sources */,
+				5AA64E142BF36A7800CABD71 /* (null) in Sources */,
+				5A120F962BF6175400E32BAF /* ColorKeys+App.swift in Sources */,
+				5A120F912BF616CA00E32BAF /* ThemeConfig+Colors.swift in Sources */,
 				5A457B412BF3557000A2A39B /* ThemeWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,6 +897,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -900,6 +929,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

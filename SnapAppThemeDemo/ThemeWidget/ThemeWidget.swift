@@ -32,7 +32,7 @@ struct ThemeWidget: Widget {
 	
 	init() {
 		
-		self.dependenciesTemplate = TemplateDependencies(templateState: .init(theme: .baseApp))
+		self.dependenciesTemplate = TemplateDependencies(theme: .baseApp)
 		self.dependencies = AppDependencies(templateDependencies: dependenciesTemplate)
 		
 	}
@@ -42,8 +42,6 @@ struct ThemeWidget: Widget {
 			
 			ThemeWidgetEntryView(entry: entry)
 				.theme(containerBackground: .interactive, placement: .widget)
-				.apply(dependencies)
-				.apply(dependenciesTemplate)
 			
         }
         .configurationDisplayName("My Widget")

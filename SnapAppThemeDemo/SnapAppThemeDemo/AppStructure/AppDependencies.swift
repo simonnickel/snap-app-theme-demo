@@ -10,8 +10,8 @@ import Observation
 import SnapTemplateShared
 
 /// Definition and application of dependenies to use in the app.
-@Observable class AppDependencies {
-	
+@Observable class AppDependencies: Dependencies {
+
 	private let templateDependencies: TemplateDependencies
 	private var appState: AppState
 	
@@ -26,10 +26,11 @@ import SnapTemplateShared
 	// MARK: - Apply
 	
 	/// Apply dependencies defined in project. See `TemplateDependencies` for template defined dependencies.
-	func apply<Content: View>(on content: Content) -> some View {
+	@MainActor
+	func apply<Content: View>(on content: Content) -> any View {
 
 		// Apply Theme Config
-		var theme = templateDependencies.templateState.theme
+		var theme = templateDependencies.theme
 		for config in appState.themeConfigs {
 			if config == ThemeConfig.colorsBase {
 				// Do not apply base color config, would override accent color from settings.
@@ -39,6 +40,7 @@ import SnapTemplateShared
 		}
 		
 		return content
+			.fontDesign(nil) // Override fontDesign set in TemplateDependencies, otherwise custom fonts will break.
 			.theme(apply: theme) // Already applied in TemplateDependencies, but has to applied again because of config changes.
 			.environment(\.appState, appState)
 			.environment(\.appStateBinding, Binding(get: {
