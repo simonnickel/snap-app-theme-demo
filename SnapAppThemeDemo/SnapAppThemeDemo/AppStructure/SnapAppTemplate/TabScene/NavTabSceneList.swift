@@ -10,14 +10,18 @@ import SnapTheme
 
 struct NavTabSceneList: View {
 	
+	// TODO: There might be a better way to generalise this scenario. Should not be necessary to get both environment values.
+	@EnvironmentObject var destinationFactory: AppDestinationFactory
+	@Environment(\.navigationMode) private var navigationMode
+	
 	/// Wrapping scene to intercept navigationDestination. Needed to manually keep track of selection state for row highlighting.
 	private struct WrappedScene: Hashable {
-		let scene: NavItem
+		let scene: AppDestination
 	}
 	
-	@State var tab: NavItem
+	@State var tab: AppDestination
 	
-	@State private var selected: NavItem?
+	@State private var selected: AppDestination?
 	
 	var body: some View {
 		
@@ -32,7 +36,7 @@ struct NavTabSceneList: View {
 			
 		}
 		.navigationDestination(for: WrappedScene.self) { wrapped in
-			AnyView(wrapped.scene.destination())
+			AnyView(destinationFactory.destination(for: wrapped.scene, in: navigationMode))
 				.onAppear {
 					selected = wrapped.scene
 				}

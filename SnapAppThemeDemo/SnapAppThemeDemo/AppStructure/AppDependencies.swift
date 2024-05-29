@@ -10,7 +10,7 @@ import Observation
 import SnapTemplateShared
 
 /// Definition and application of dependenies to use in the app.
-@Observable class AppDependencies: Dependencies {
+@Observable class AppDependencies: DependencyContainer {
 
 	private let templateDependencies: TemplateDependencies
 	private var appState: AppState
@@ -48,6 +48,7 @@ import SnapTemplateShared
 			}, set: { newValue in
 				self.appState = newValue
 			}))
+			.environmentObject(AppDestinationFactory(dependencies: self))
 		
 	}
 	

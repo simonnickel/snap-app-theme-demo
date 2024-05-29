@@ -7,10 +7,10 @@
 
 import SwiftUI
 import SnapTheme
-import SnapMatchingNavigation
+import SnapTemplateShared
 
 /// Definition of main navigation hierarchy for Tab and Sidebar layouts.
-enum NavItem: MNavItem, Codable, Equatable, Hashable, Identifiable {
+enum AppDestination: TemplateDestination, Codable, Equatable, Identifiable {
 	
 	
 	// MARK: - Scenes
@@ -27,25 +27,25 @@ enum NavItem: MNavItem, Codable, Equatable, Hashable, Identifiable {
 	
 	// MARK: - Navigation
 	
-	static let initial: NavItem = .examples
+	static let initial: AppDestination = .examples
 	
 	
 	// MARK: Sidebar
 	
-	static let sidebarSections: [NavItem] = [.examples, .elements, .keys]
+	static let sidebarSections: [AppDestination] = [.examples, .elements, .keys]
 	
 	
 	// MARK: Tabs
 	
 	/// TabConfiguration limits number of visible tabs based on device. Showing them in order of this array, required tabs will move forward to be visible. Additional tabs would be displayed in a list under the `more` tab. Should be avoided as this list can not be modified and has its own NavigationStack.
-	static let tabsAvailable: [NavItem] = [.examples, .elements, .keys]
-	static let tabsRequired: [NavItem] = []
-	static let tabsDisabledByDefault: Set<NavItem> = []
+	static let tabsAvailable: [AppDestination] = [.examples, .elements, .keys]
+	static let tabsRequired: [AppDestination] = []
+	static let tabsDisabledByDefault: Set<AppDestination> = []
 	
 	
 	// MARK: - Hierarchy
 	
-	var subItems: [NavItem] {
+	var subItems: [AppDestination] {
 		switch self {
 			case .examples: [
 				.exampleColors, .exampleText, .exampleLists

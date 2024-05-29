@@ -12,10 +12,11 @@ import SnapTemplateShared
 struct NavSplitScene: View {
 	
 	@Environment(\.templateStateBinding) private var templateStateBinding
+	@EnvironmentObject private var destinationFactory: AppDestinationFactory
+
+	let sections: [AppDestination]
 	
-	let sections: [NavItem]
-	
-	@State private var selectedInSidebar: NavItem? = NavItem.initial.subItems.first
+	@State private var selectedInSidebar: AppDestination? = AppDestination.initial.subItems.first
 	@State private var preferredCompactColumn: NavigationSplitViewColumn = .content
 	@State private var isCollapsed: Bool = false
 
@@ -34,7 +35,7 @@ struct NavSplitScene: View {
 			}, detail: {
 				
 				if let selected = selectedInSidebar {
-					AnyView(NavItem.navigationStack(root: selected, for: .split))
+					TemplateNavigationStack(factory: destinationFactory, root: selected, mode: .split)
 				} else {
 					ThemeEmptyDecorationView(text: "Select something in the sidebar.")
 				}

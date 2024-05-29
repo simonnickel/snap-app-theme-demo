@@ -37,4 +37,15 @@ struct AppContent: View {
 		
 	}
 	
+	@MainActor
+	private var templateBody: some View {
+		TemplateContent(splitScene: {
+			NavSplitScene(sections: AppDestination.sidebarSections)
+		}, tabScene: { settings in
+			NavTabScene(tabsSetting: settings.value(.navigationTabs))
+		}, settingsScene: {
+			SettingsScene()
+		})
+	}
+	
 }
