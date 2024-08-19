@@ -1,8 +1,6 @@
 //
-//  LabelStyleModel.swift
-//  SnapAppThemeDemo
-//
-//  Created by Simon Nickel on 24.09.23.
+//  SNAP - https://github.com/simonnickel/snap
+//  Created by Simon Nickel
 //
 
 @preconcurrency import SwiftUI // TODO concurrency: LabelStyle is not Sendable yet.

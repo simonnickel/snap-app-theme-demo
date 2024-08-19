@@ -1,8 +1,6 @@
 //
-//  ExampleCardView.swift
-//  SnapAppThemeDemo
-//
-//  Created by Simon Nickel on 14.09.23.
+//  SNAP - https://github.com/simonnickel/snap
+//  Created by Simon Nickel
 //
 
 import SwiftUI

@@ -1,8 +1,6 @@
 //
-//  SplitBackgroundContainer.swift
-//  SnapAppThemeDemo
-//
-//  Created by Simon Nickel on 15.11.23.
+//  SNAP - https://github.com/simonnickel/snap
+//  Created by Simon Nickel
 //
 
 import SwiftUI
