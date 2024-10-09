@@ -3,9 +3,10 @@
 //  Created by Simon Nickel
 //
 
-@preconcurrency import SwiftUI // TODO concurrency: LabelStyle is not Sendable yet.
+import SwiftUI
 import SnapTheme
 
+@MainActor
 struct LabelStyleModel: Identifiable, Hashable, Equatable, Sendable {
 	
 	internal init(name: String, apiFull: String? = nil, apiExtension: String? = nil, style: any LabelStyle, styleOptions: [LabelStyleModel] = [], cardStyle: Theme.Card.Style? = nil) {
@@ -25,11 +26,11 @@ struct LabelStyleModel: Identifiable, Hashable, Equatable, Sendable {
 	let styleOptions: [LabelStyleModel]
 	let cardStyle: Theme.Card.Style?
 	
-	static func == (lhs: LabelStyleModel, rhs: LabelStyleModel) -> Bool {
+	nonisolated static func == (lhs: LabelStyleModel, rhs: LabelStyleModel) -> Bool {
 		lhs.id == rhs.id
 	}
 	
-	func hash(into hasher: inout Hasher) {
+	nonisolated func hash(into hasher: inout Hasher) {
 		hasher.combine(id)
 		hasher.combine(name)
 	}

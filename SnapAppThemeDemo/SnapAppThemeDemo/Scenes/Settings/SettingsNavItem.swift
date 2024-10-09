@@ -19,11 +19,13 @@ enum SettingsNavItem: Codable {
 	
 	// MARK: - Destination
 	
+	@MainActor
 	var destination: any View {
 		destinationPlain
 			.navigationTitle(title)
 	}
 	
+	@MainActor
 	var destinationPlain: any View {
 		switch self {
 				
