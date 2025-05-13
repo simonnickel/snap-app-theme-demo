@@ -29,14 +29,19 @@ class AppDestinationFactory: NavigationDestinationFactory, ObservableObject {
 				
 			case .tab: destinationView
 #if !os(macOS)
-					.if(AppDestination.tabsAvailable.contains(destination)) { view in
-						view.toolbar {
-							ToolbarItem(placement: .topBarLeading) {
-								ToolbarButtonSettings()
-									.buttonStyle(.themeNavbar)
-							}
-						}
-					}
+                    .if(AppDestination.tabsAvailable.contains(destination)) { view in
+                        view.toolbar {
+                            ToolbarItem(placement: .topBarLeading) {
+                                ToolbarButtonSettings()
+                                    .buttonStyle(.themeNavbar)
+                            }
+                        }
+                    }
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            ThemeConfigToolbarButton()
+                        }
+                    }
 #endif
 				
 			case .split: destinationView
